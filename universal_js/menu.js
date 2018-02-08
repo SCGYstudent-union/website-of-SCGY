@@ -1,0 +1,15 @@
+	$(document).ready(function(){
+		$("#sub_pane1,#sub_pane2,#sub_pane3,#pane").hide();
+		$("#flip1,#flip2").click(function(){
+			$("#pane").slideToggle("slow");
+  		});
+		$("#panel").click(function(){
+			$("#sub_pane1").slideToggle("slow");
+		})
+		$("#pane2").click(function(){
+			$("#sub_pane2").slideToggle("slow");
+		})
+		$("#pane3").click(function(){
+			$("#sub_pane3").slideToggle("slow");
+		})
+	});
