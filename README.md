@@ -1,3 +1,3 @@
 # website-of-SCGY
 
-学生会主页
+This is the web site of SCGY
