@@ -1,4 +1,8 @@
     @charset"utf-8";
+    body{
+        position:relative;
+        min-height:100%;
+    }
     .head-title{
     	font-size:1.7vw;
     	color:white;
