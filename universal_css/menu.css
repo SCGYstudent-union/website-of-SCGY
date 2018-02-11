@@ -1,4 +1,8 @@
     @charset"utf-8";
+    body{
+        position:relative;
+        min-height:100%;
+    }
     .head-title{
     	font-size:1.7vw;
     	color:white;
@@ -93,7 +97,9 @@
         text-align:center;
         margin:0;
         padding:0;
-        width:100%;
+        width:105%;
+        position:absolute;
+        bottom:0;
     }
     .foot{
         margin:0;
