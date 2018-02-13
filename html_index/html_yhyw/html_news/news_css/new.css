@@ -55,23 +55,14 @@
     	font-size:7px;
 <<<<<<< HEAD
     }
-    .little_title{
-    	text-align:center;
-    }
-    .little_title p{
-    	font-size:20px;
-    }
-    .little_title strong{
-    	font-size:25px;
-    	margin-bottom:100px;
-    }
-    .little_title i{
-    	font-size:12px;
-    }
     .main_sub_title{
         font-size:10px;
         color:gray;
         text-align:center;
 =======
 >>>>>>> upstream/master
+    }
+    .video{
+    	text-align:center;
+    	margin:0 auto;
     }
