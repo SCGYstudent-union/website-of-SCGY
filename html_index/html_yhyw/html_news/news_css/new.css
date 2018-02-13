@@ -21,6 +21,8 @@
     }
     h2.hd{
     	font-size: 30px;
+        border-bottom:#ACACAC 2px solid;
+        padding-bottom: 25px;
     }
     .cont{
     	padding-top: 90px;
@@ -31,7 +33,7 @@
 		font-size: 16px;
     }
     .zhengwen {
-        padding-top: 40px;
+        padding-top: 20px;
     }
     .cont-img{
         text-align:center;
@@ -64,4 +66,9 @@
     }
     .little_title i{
     	font-size:12px;
+    }
+    .main_sub_title{
+        font-size:10px;
+        color:gray;
+        text-align:center;
     }
