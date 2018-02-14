@@ -22,6 +22,39 @@
     	background-color:white;
     }
     </style>
+
+    <script>
+    		$(document).ready(function(){
+    			$("#submit_table").click(function(){
+    				alert("提交成功！");
+          			$.post("register.php",{
+              			type: $("#type").val(),
+              			description: $("#description").val(),
+              			name: $("#name").val(),
+              			contact: $("#contact").val(),
+              			postscript: $("#postscript").val(),
+              			register: 1
+            		},
+            		function(obj){
+              			obj=$.parseJSON(obj);
+              			if(obj.status==undefined){
+              				obj={
+              					status: 1,
+              					text: "提交失败"
+              				};
+              			}
+              			alert(obj.text);
+            		});
+        		});
+        		$("#reset_table").click(function(){
+          			$("#description").val("");
+          			$("#name").val("");
+          			$("#contact").val("");
+          			$("#postscript").val("");
+        		});
+    		});
+    	</script>
+
 </head>
 <body>
 	<div class="row hidden-sm hidden-xs" style="background-color:#323232; position:fixed; z-index:100; width:105%;">
@@ -110,7 +143,7 @@
 	<div class="col-sm-1 col-md-2 col-xs-1 col-xl-2"></div>
 	<div class="col-sm-10 col-md-8 col-xs-10 col-xl-8 section">
 		<div><big>欢迎大家联系我们</big></div>
-		<form role="form" action="mailto:guchenfei2@163.com" method="get" enctype="text/plain">
+		<form role="form" >
 			<div class="form-group">
 				<textarea id="message" rows="25" class="form-control" name="body" placeholder="请写出您的意见"></textarea><br/>
 				<button id="submit_table" class="btn btn-primary">提交</button>
