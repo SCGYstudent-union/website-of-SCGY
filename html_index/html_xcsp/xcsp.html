@@ -102,9 +102,13 @@
 
 
 	<div style="text-align:center;margin:0 auto;">
-		<iframe frameborder="0" width="896" height="697.2" src="https://v.qq.com/iframe/player.html?vid=a0553q946wd&tiny=0&auto=0" allowfullscreen></iframe>
+		<iframe id="vedio" frameborder="0" src="https://v.qq.com/iframe/player.html?vid=a0553q946wd&tiny=0&auto=0" allowfullscreen></iframe>
 	</div>
-
+	<script>
+    	var ifm= document.getElementById("vedio");
+		ifm.width=(document.documentElement.clientWidth)*0.8;
+		ifm.height=ifm.width*697.2/896;
+    </script>
 
 	<div class="footer">
 		<p class="foot">少年班学院学生会© 2017‐2018 All rights reserved.</p>
