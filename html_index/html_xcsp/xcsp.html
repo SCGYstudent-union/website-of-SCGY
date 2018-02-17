@@ -105,9 +105,11 @@
 		<iframe id="vedio" frameborder="0" src="https://v.qq.com/iframe/player.html?vid=a0553q946wd&tiny=0&auto=0" allowfullscreen></iframe>
 	</div>
 	<script>
-    	var ifm= document.getElementById("vedio");
+	setInterval(function() {
+		var ifm= document.getElementById("vedio");
 		ifm.width=(document.documentElement.clientWidth)*0.8;
 		ifm.height=ifm.width*697.2/896;
+	},200);
     </script>
 
 	<div class="footer">

@@ -12,14 +12,14 @@ $mail->SMTPAuth = true;
 $mail->SMTPSecure = "ssl";
 $mail->Host = "smtp.exmail.qq.com";
 $mail->Port = 465;
-$mail->Username = "scgyunion@163.com";
-$mail->Password = "scgysu";
-$mail->SetFrom("scgyunion@163.com", "someone");
-$mail->AddReplyTo("scgyunion@163.com", "someone");
+$mail->Username = "scgypf@ourscgy.ustc.edu.cn";
+$mail->Password = "s1g2c3y4";
+$mail->SetFrom("scgypf@ourscgy.ustc.edu.cn", "someone");
+$mail->AddReplyTo("scgypf@ourscgy.ustc.edu.cn", "someone");
 $mail->Subject = "少院网站——联系我们";
 $mail->AltBody = "";
 $mail->MsgHTML($content);
-$mail->AddAddress("scgyunion@163.com");
+$mail->AddAddress("scgypf@ourscgy.ustc.edu.cn");
 
 if (!$mail->Send()) {
     echo "Error:".$mail->ErrorInfo;
