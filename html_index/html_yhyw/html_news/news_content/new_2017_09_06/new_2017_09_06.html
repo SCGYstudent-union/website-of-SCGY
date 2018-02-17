@@ -117,20 +117,17 @@
 		<div class="cont col-md-8 col-sm-8 col-xs-10 col-xl-8">
 			<h2 class="text-center strong hd ">来科大的你，今天过得如何？</h2>
 			<div class="main_sub_title"><p>发布时间:2017-9-6&emsp;&emsp;配文:韩文涛&emsp;编辑:陈洋</p><p>视频:新生采访视频小组</p></div>
-
-
-			<!--我从微信的HTML上copy下来的视频的东西-->
-			
-
-
-
 			<div class="zhengwen">
 				<p>
 					&emsp;&emsp;一转眼新生报到也过去两周多了，天南海北赶来求学的年轻人们想必也已经慢慢摸索了这个尚且还算陌生的校园，那么可爱的萌新们对这个学校的各个方面是怎么看的呢，让我们跟着菌菌的摄像头一起去抓几个新生来采访吧
 				</p>
+
+
 				<div class="video">
-					<iframe frameborder="0" class="video" width="670" height="376.875" src="http://v.qq.com/iframe/player.html?vid=b0545sfyto7&amp;width=670&amp;height=376.875&amp;auto=0" scrolling="no"></iframe>
+					<iframe id="vedio" frameborder="0" class="video" src="http://v.qq.com/iframe/player.html?vid=b0545sfyto7" scrolling="no"></iframe>
 				</div>
+
+
 				<div class="gray_word">
 					&emsp;&emsp;流量不够不敢看视频？没关系，菌菌为大家准备了文字截图，一起来看看吧
 				</div>
@@ -260,6 +257,17 @@
 		<div class="hidden-xs col-md-2 col-sm-2 col-xl-2" style="background-image:url(../../news_material/bg.jpg);"></div>
 		<div class="hidden-sm hidden-md hidden-lg col-xs-1" style="background-color:#F7F7F7"></div>
 	</div>
+
+
+	<script>
+	setInterval(function() {
+		var ifm= document.getElementById("vedio");
+		ifm.width=(document.documentElement.clientWidth)*0.6;
+		ifm.height=ifm.width*376.875/670;
+	},200);
+    </script>
+
+
 	<div class="footer">
 		<p class="foot">少年班学院学生会© 2017‐2018 All rights reserved.</p>
 		<a class="foot" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a>
