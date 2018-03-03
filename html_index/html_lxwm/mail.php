@@ -2,7 +2,15 @@
 require_once('class.phpmailer.php');
 require_once("class.smtp.php");
 
-$content=$message;
+if(isset($_POST['message']))
+	$message = $_POST['message'];
+else{
+	$message = '';
+	echo "Empty text!";
+	exit;
+}
+
+$content="内容：<br/>".$message;
 
 $mail = new PHPMailer();
 
