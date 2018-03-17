@@ -111,16 +111,16 @@
 	
 	<div class="row">
 
-		<div class="col-sm-2 col-md-3 col-lg-3">
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 		</div>
-		<div class="col-sm-8 col-md-6 col-lg-6" style="margin-top:65px" id="svghere">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="margin-top:65px" id="svghere">
 			
 			<script language="javascript"> 
 				function showPic(event,sUrl){ 
 				  var x,y; 
 				  x = event.pageX; 
 				  y = event.pageY; 
-				  var imgwidth = 0.3 * window.outerWidth + "";
+				  var imgwidth = 0.2 * window.outerWidth + "";
 				  document.getElementById("Layer1").style.left = x+2+'px'; 
 				  document.getElementById("Layer1").style.top = y+2+'px'; 
 				  document.getElementById("Layer1").innerHTML = "<img width ="+imgwidth+" border='0' src=\"" + sUrl + "\">"; 
@@ -178,7 +178,7 @@
 				</script>
 
 		</div>
-		<div class="col-sm-2 col-md-3 col-lg-3">
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 		</div>
 	</div>
 	<div id="Layer1" style="display:none;position:absolute;z-index:1;"></div>
