@@ -121,29 +121,31 @@
 				  x = event.pageX; 
 				  y = event.pageY; 
 				  var textsize = 1.5;//图片下字体大小只用更改此处单位vw
-				  var textsizesm = 2.5;
+				  var textsizesm = 2;
 				  var textsizexs = 3.5;
 				  var imgwidth = 0.2 * window.outerWidth ;//图片大小只用修改此处
-				  var imgwidthsm = 0.3 * window.outerWidth + "";
-				  var imgwidthxs = 0.3 * window.outerWidth + "";
+				  var imgwidthsm = 0.25 * window.outerWidth ;
+				  var imgwidthxs = 0.3 * window.outerWidth ;
 				  var divwidth = imgwidth+4;
-				  document.getElementById("Layer1").style.left = x+2+'px'; 
+				  var divwidthsm = imgwidthsm+4;
+				  var divwidthxs = imgwidthxs+4;
+				  document.getElementById("Layer1").style.left = x+5+'px'; 
 				  document.getElementById("Layer1").style.top = y+2-imgwidth * 0.75 * position+'px'; 
 				  document.getElementById("Layer1").style.width = divwidth + 'px'; 
-				  document.getElementById("Layer1").innerHTML = "<img width ='"+imgwidth+"px' border='0' src=\"" + sUrl + "\"><p style = 'padding-left:5px;font-size:"+textsize+"vw;background:#fbffff;'>"+ words + "</p>" ; 
+				  document.getElementById("Layer1").innerHTML = "<img width ='"+imgwidth+"px' border='0' src=\"" + sUrl + "\"><p style = 'font-size:"+textsize+"vw;background:#fbffff;'>"+ words + "</p>" ; 
 				  document.getElementById("Layer1").style.display = ""; 
 				  document.getElementById("Layer1").classList = "hidden-xs hidden-sm";
 
-				  document.getElementById("Layer2").style.left = x+2+'px'; 
-				  document.getElementById("Layer2").style.top = y+2+'px'; 
-				  document.getElementById("Layer2").style.width = imgwidthsm + 'px'; 
-				  document.getElementById("Layer2").innerHTML = "<p style = 'font-size:"+textsizesm+"vw;background:#fbffff;'>"+ words + "</p><img width ='"+imgwidthsm+"px' border='0' src=\"" + sUrl + "\">"; 
+				  document.getElementById("Layer2").style.left = x+5+'px'; 
+				  document.getElementById("Layer2").style.top = y+2-imgwidthsm * 0.75 * position+'px'; 
+				  document.getElementById("Layer2").style.width = divwidthsm + 'px'; 
+				  document.getElementById("Layer2").innerHTML = "<img width ='"+imgwidthsm+"px' border='0' src=\"" + sUrl + "\"><p style = 'font-size:"+textsizesm+"vw;background:#fbffff;'>"+ words + "</p>"; 
 				  document.getElementById("Layer2").style.display = ""; 
 				  document.getElementById("Layer2").classList = "hidden-xs hidden-md hidden-lg";
 
-				  document.getElementById("Layer3").style.left = x+2+'px'; 
+				  document.getElementById("Layer3").style.left = x+5+'px'; 
 				  document.getElementById("Layer3").style.top = y+2+'px'; 
-				  document.getElementById("Layer3").style.width = imgwidthxs + 'px'; 
+				  document.getElementById("Layer3").style.width = divwidthxs + 'px'; 
 				  document.getElementById("Layer3").innerHTML = "<img width ='"+imgwidthxs+"px' border='0' src=\"" + sUrl + "\">"; 
 				  document.getElementById("Layer3").style.display = ""; 
 				  document.getElementById("Layer3").classList = "hidden-sm hidden-md hidden-lg";
@@ -243,8 +245,8 @@
 		</div>
 	</div>
 	<div id="Layer1" style="display:none;position:absolute;z-index:1;background:#fbffff;border:2px solid #a1a1a1;border-radius:5px;-moz-border-radius:25px;"></div>
-	<div id="Layer2" style="display:none;position:absolute;z-index:1;"></div>
-	<div id="Layer3" style="display:none;position:absolute;z-index:1;"></div>
+	<div id="Layer2" style="display:none;position:absolute;z-index:1;background:#fbffff;border:2px solid #a1a1a1;border-radius:5px;-moz-border-radius:25px;"></div>
+	<div id="Layer3" style="display:none;position:absolute;z-index:1;background:#fbffff;border:2px solid #a1a1a1;border-radius:5px;-moz-border-radius:25px;"></div>
 		
 	<div class="footer">
 		<p class="foot">少年班学院学生会© 2017‐2018 All rights reserved.</p>
