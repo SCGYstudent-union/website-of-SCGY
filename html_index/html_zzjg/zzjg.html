@@ -169,15 +169,15 @@
 				  var textsizesm = 3.0;
 				  var textsizexs = 3.8;
 				  var jsonCircles = [
-					{"x_axis":svgwidth*0.5,"y_axis":svgwidth*0.5,"radius":svgwidth*0.16,"color":"#f0f0f0","department":"主席团"},
-					{"x_axis":svgwidth*0.5,"y_axis":svgwidth*0.15,"radius":svgwidth*0.12,"color":"#b3f0ff","department":"办公室","link":"html_bgs/bgs.html","pic":"'zzjg_material/bgs.jpeg'","intro":"办公室，负责财务管理、档案记录、文件管理、会议记录、内部联络的部门"},
-					{"x_axis":svgwidth*0.2526,"y_axis":svgwidth*0.2526,"radius":svgwidth*0.12,"color":"#ffd7d7","department":"网媒部","link":"html_wmb/wmb.html","pic":"'zzjg_material/wmb.jpeg'","intro":"网媒部，从事网络媒体宣传工作的部门"},
-					{"x_axis":svgwidth*0.7474,"y_axis":svgwidth*0.2526,"radius":svgwidth*0.12,"color":"#ffd7d7","department":"权益部","link":"html_qyb/qyb.html","pic":"'zzjg_material/qyb.jpeg'","intro":"权益部，是维护学生的合法权益的部门"},
-					{"x_axis":svgwidth*0.15,"y_axis":svgwidth*0.5,"radius":svgwidth*0.12,"color":"#b3f0ff","department":"技术部","link":"html_jsb/jsb.html","pic":"'zzjg_material/jsb.jpeg'","intro":"技术部，显然就是为学生会提供技术支持的部门"},
-					{"x_axis":svgwidth*0.85,"y_axis":svgwidth*0.5,"radius":svgwidth*0.12,"color":"#b3f0ff","department":"设计部","link":"html_sjb/sjb.html","pic":"'zzjg_material/sjb.jpeg'","intro":"设计部，专门为配合少院宣传工作设计各种东西的部门"},
+					{"x_axis":svgwidth*0.5,"y_axis":svgwidth*0.5,"radius":svgwidth*0.16,"color":"#f0f0f0","department":"主席团","pic":"'zzjg_material/zxt.jpg'","intro":"主席团"},
+					{"x_axis":svgwidth*0.5,"y_axis":svgwidth*0.15,"radius":svgwidth*0.12,"color":"#b3f0ff","department":"办公室","link":"html_bgs/bgs.html","pic":"'zzjg_material/bgs.jpeg'","intro":"办公室，负责财务管理、档案记录、文件管理、会议记录、内部联络"},
+					{"x_axis":svgwidth*0.2526,"y_axis":svgwidth*0.2526,"radius":svgwidth*0.12,"color":"#ffd7d7","department":"网媒部","link":"html_wmb/wmb.html","pic":"'zzjg_material/wmb.jpeg'","intro":"网媒部，从事网络媒体宣传工作"},
+					{"x_axis":svgwidth*0.7474,"y_axis":svgwidth*0.2526,"radius":svgwidth*0.12,"color":"#ffd7d7","department":"权益部","link":"html_qyb/qyb.html","pic":"'zzjg_material/qyb.jpeg'","intro":"权益部，维护学生合法权益"},
+					{"x_axis":svgwidth*0.15,"y_axis":svgwidth*0.5,"radius":svgwidth*0.12,"color":"#b3f0ff","department":"技术部","link":"html_jsb/jsb.html","pic":"'zzjg_material/jsb.jpeg'","intro":"技术部，为学生会提供技术支持"},
+					{"x_axis":svgwidth*0.85,"y_axis":svgwidth*0.5,"radius":svgwidth*0.12,"color":"#b3f0ff","department":"设计部","link":"html_sjb/sjb.html","pic":"'zzjg_material/sjb.jpeg'","intro":"设计部，专门为配合少院宣传工作设计各种东西"},
 					{"x_axis":svgwidth*0.5,"y_axis":svgwidth*0.85,"radius":svgwidth*0.12,"color":"#b3f0ff","department":"外交部","link":"html_wjb/wjb.html","pic":"'zzjg_material/wjb.jpeg'","intro":"外交部，承担了学生会的外联赞助、对外交流、文化产品和导游团等一系列重要任务"}, 
 					{"x_axis":svgwidth*0.2526,"y_axis":svgwidth*0.7474,"radius":svgwidth*0.12,"color":"#ffd7d7","department":"学术部","link":"html_xsb/xsb.html","pic":"'zzjg_material/xsb.jpeg'","intro":"学术部的主要任务是在学年里组织各种各样的充满干货的学术交流活动，为同学们将来的发展提供更多的支持"},
-					{"x_axis":svgwidth*0.7474,"y_axis":svgwidth*0.7474,"radius":svgwidth*0.12,"color":"#ffd7d7","department":"文体部","link":"html_wtb/wtb.html","pic":"'zzjg_material/wtb.jpeg'","intro":"文体部，文艺和体育结合的部门"}  
+					{"x_axis":svgwidth*0.7474,"y_axis":svgwidth*0.7474,"radius":svgwidth*0.12,"color":"#ffd7d7","department":"文体部","link":"html_wtb/wtb.html","pic":"'zzjg_material/wtb.jpeg'","intro":"文体部，负责举办比赛、舞会等课余活动"}  
 				  ];
 			
 				  var svgContainer = d3.select("#svghere").append("svg")
@@ -190,7 +190,7 @@
 					.append("a") 
 					.attr("href",function(d){return d.link;})
 					.attr("onmouseout","hiddenPic()")
-					.attr("onmousemove",function(d,i){var position;if(i<4)position = 0;else if(i == 4 || i == 5)position = 1;else position = 2;if(i!=0)return "showPic(event,"+d.pic+ ",'" + d.intro + "',"+position+")";});
+					.attr("onmousemove",function(d,i){var position;if(i<=3)position = 0;else if(i == 4 || i == 5)position = 1;else position = 2;return "showPic(event,"+d.pic+ ",'" + d.intro + "',"+position+")";});
 			
 				  var circles = links
 					.append("circle")
@@ -236,7 +236,7 @@
 					.text(function(d,i){if(i!=0)return d.department+":"});
 				  intrs.append("p")
 					.attr("style","'"+textsizexs+"vw'")
-					.text(function(d){return d.intro});
+					.text(function(d,i){if(i!=0)return d.intro});
 
 				</script>
 
