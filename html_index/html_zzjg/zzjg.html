@@ -116,16 +116,16 @@
 		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="margin-top:65px" id="svghere">
 			
 			<script language="javascript"> 
-				function showPic(event,sUrl,words,position){ 
+				function showPic(event,sUrl,words,position,relawidth){ 
 				  var x,y; 
 				  x = event.pageX; 
 				  y = event.pageY; 
 				  var textsize = 1.5;//图片下字体大小只用更改此处单位vw
 				  var textsizesm = 2;
-				  var textsizexs = 3.5;
-				  var imgwidth = 0.2 * window.outerWidth ;//图片大小只用修改此处
-				  var imgwidthsm = 0.25 * window.outerWidth ;
-				  var imgwidthxs = 0.3 * window.outerWidth ;
+				  var textsizexs = 3.2;
+				  var imgwidth = 0.2 * window.outerWidth * relawidth ;//图片大小只用修改此处
+				  var imgwidthsm = 0.25 * window.outerWidth * relawidth ;
+				  var imgwidthxs = 0.3 * window.outerWidth * relawidth ;
 				  var divwidth = imgwidth+4;
 				  var divwidthsm = imgwidthsm+4;
 				  var divwidthxs = imgwidthxs+4;
@@ -169,7 +169,7 @@
 				  var textsizesm = 3.0;
 				  var textsizexs = 3.8;
 				  var jsonCircles = [
-					{"x_axis":svgwidth*0.5,"y_axis":svgwidth*0.5,"radius":svgwidth*0.16,"color":"#f0f0f0","department":"主席团","pic":"'zzjg_material/zxt.jpg'","intro":"主席团"},
+					{"x_axis":svgwidth*0.5,"y_axis":svgwidth*0.5,"radius":svgwidth*0.16,"color":"#f0f0f0","department":"主席团","pic":"'zzjg_material/zxt.jpg'","intro":"主席团，少院学生会的核心，领导学生会的各项工作"},
 					{"x_axis":svgwidth*0.5,"y_axis":svgwidth*0.15,"radius":svgwidth*0.12,"color":"#b3f0ff","department":"办公室","link":"html_bgs/bgs.html","pic":"'zzjg_material/bgs.jpeg'","intro":"办公室，负责财务管理、档案记录、文件管理、会议记录、内部联络"},
 					{"x_axis":svgwidth*0.2526,"y_axis":svgwidth*0.2526,"radius":svgwidth*0.12,"color":"#ffd7d7","department":"网媒部","link":"html_wmb/wmb.html","pic":"'zzjg_material/wmb.jpeg'","intro":"网媒部，从事网络媒体宣传工作"},
 					{"x_axis":svgwidth*0.7474,"y_axis":svgwidth*0.2526,"radius":svgwidth*0.12,"color":"#ffd7d7","department":"权益部","link":"html_qyb/qyb.html","pic":"'zzjg_material/qyb.jpeg'","intro":"权益部，维护学生合法权益"},
@@ -190,7 +190,7 @@
 					.append("a") 
 					.attr("href",function(d){return d.link;})
 					.attr("onmouseout","hiddenPic()")
-					.attr("onmousemove",function(d,i){var position;if(i<=3)position = 0;else if(i == 4 || i == 5)position = 1;else position = 2;return "showPic(event,"+d.pic+ ",'" + d.intro + "',"+position+")";});
+					.attr("onmousemove",function(d,i){var position,relawidth;if(i<=3)position = 0;else if(i == 4 || i == 5)position = 1;else position = 2;if(i==0)relawidth=1.6;else relawidth = 1;return "showPic(event,"+d.pic+ ",'" + d.intro + "',"+position+","+relawidth+")";});
 			
 				  var circles = links
 					.append("circle")
@@ -233,10 +233,10 @@
 				  intrs.append("p")
 				    .attr("style","'"+textsizexs+"vw'")
 					.append("b")
-					.text(function(d,i){if(i!=0)return d.department+":"});
+					.text(function(d,i){return d.department+":"});
 				  intrs.append("p")
 					.attr("style","'"+textsizexs+"vw'")
-					.text(function(d,i){if(i!=0)return d.intro});
+					.text(function(d,i){return d.intro});
 
 				</script>
 
