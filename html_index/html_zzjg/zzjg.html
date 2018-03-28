@@ -190,7 +190,7 @@
 					.append("a") 
 					.attr("href",function(d){return d.link;})
 					.attr("onmouseout","hiddenPic()")
-					.attr("onmousemove",function(d,i){var position,relawidth;if(i<=3)position = 0;else if(i == 4 || i == 5)position = 1;else position = 2;if(i==0)relawidth=1.6;else relawidth = 1;return "showPic(event,"+d.pic+ ",'" + d.intro + "',"+position+","+relawidth+")";});
+					.attr("onmousemove",function(d,i){var position,relawidth;if(i==0)position=0.44;else if(i<=3)position = 0;else if(i == 4 || i == 5)position = 1;else position = 2;if(i==0)relawidth=1.6;else relawidth = 1;return "showPic(event,"+d.pic+ ",'" + d.intro + "',"+position+","+relawidth+")";});
 			
 				  var circles = links
 					.append("circle")
