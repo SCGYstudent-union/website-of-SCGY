@@ -1,42 +1,58 @@
  <!DOCTYPE html>
  <html>
  <head>
- 	<title>少年游视频</title>
+ 	<title>少年游</title>
  	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 	<meta name="keywords" content="中国科学技术大学,少年班学院,学生会,中科大,少院">
 	<meta name="author" content="少年班学院学生会技术部">
-	<meta name="description" content="少年游视频">
+	<meta name="description" content="少年游">
 	<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" >
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style type="text/css">
+	body{
+		background-color: #000000;
+	}
     .footer{
         background-color:#323232;
         font-size:12px;
         color:white;
         text-align:center;
-        margin:0;
-        padding:0;
-        width:105%;
+        width:100%;
+        position:fixed;
+        bottom:0;
     }
     .foot{
         margin:0;
+        color:#FFFFFF;
     }
     a.foot,a.foot:hover,a.foot:active,a.foot:visited{
         text-decoration:none;
+        color:#0080FF;
     }
 	</style>
  </head>
  <body>
- 	<div style="text-align:center;margin:0 auto;">
+  	<!--div>
+    	<button src="index.html" type="button" class="btn btn-primary" style="margin-bottom:10px;margin-top: 5px;margin-left: 5px;">后退</button>
+	</div-->
+ 	<div style="text-align:center;margin:30px auto;">
  		<iframe id="vedio" src="https://player.bilibili.com/player.html?aid=36881924&cid=64779846&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen > </iframe>
  	</div>
  	<script>
 		var ifm= document.getElementById("vedio");
-		ifm.width=(document.documentElement.clientWidth)*0.8;
+		ifm.width=(document.documentElement.clientWidth)*0.6;
 		ifm.height=ifm.width*9/16;
     </script>
-
+    <h2 style="text-align: center;margin-top: 15%;color:#707070;">
+    	敬请期待
+    </h2>
+    <div align="center">
+    	<img src="1.gif" style="width:70%;" />
+	</div>
 	<div class="footer">
-		<p class="foot">少年班学院学生会© 2017‐2018 All rights reserved.</p>
+		<p class="foot word">少年班学院学生会© 2017‐2018 All rights reserved.</p>
 		<a class="foot" href="http://202.38.70.99/html_index/html_lxwm/lxwm.html">联系我们</a>
 	</div>
  </body>
