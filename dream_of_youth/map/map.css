@@ -21,19 +21,33 @@
   border: 0;
 }  
 #rtbutton {
-	background-color: #008CBA;
-    border: none;
+	background-color: black;
     color: white;
-   	padding: 15px 32px;
+	border: 0.2em solid white; 
+	font-weight:bold;
+   	padding: 0.4em 1.2em;
     text-align: center;
     text-decoration: none;
  	display: inline-block;
-	font-size: 2.5em;
+	font-size: 2.3em;
  	margin: 0.25em 0.25em;
     cursor: pointer;
     white-space:nowrap;	
     border-radius:0.5em;
 }
+
+		.zgq p{
+			color:#d3eafa;
+		}
+
+		.xgq p{
+			color:#eccece;
+		}
+
+		.sgq p{
+			color:#cdd7f0;
+		}
+
 
 		.biaoti{
    		 	color: red;
