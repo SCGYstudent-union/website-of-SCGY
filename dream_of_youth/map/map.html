@@ -11,29 +11,20 @@
 	<style type="text/css">
 		body 
 		{
-			background-image:url('./map_img/bg.png');
-		    background-size:101.5%;
+			background-image:url('./map_img/bg2.png');
+		    background-size:100%;
 		    background-repeat:no-repeat;
+   			background-color: #282727;
 		}
 		.tuwen .tu{
 			width: 20%;
 			position:relative;
 		}
 		.fenqu .tu{
+			height: 60%;
 			width:60%;
 		}
 
-		.zgq p{
-			color:#d3eafa;
-		}
-
-		.xgq p{
-			color:#eccece;
-		}
-
-		.sgq p{
-			color:#cdd7f0;
-		}
 		.colleft .wenzi3{
 			text-align: right;
 		}
@@ -51,7 +42,7 @@
 		}
 		.colmid{
 			position: relative;
-			left: 2%;
+			left: 0%;
 		}
 		.colright{
 			position: relative;
@@ -61,12 +52,110 @@
 		.row{
 			margin:0;
 		}
+		#finishbt {
+		background-color: white;
+	   	color: black;
+	   	padding: 0px 0px;
+	   	font-size: 6em;	
+	    border: none;
+	 	text-align: center;
+	 	text-decoration: none;
+	 	display: inline-block;
+		width: 13%;
+		height: 10%;
+    	cursor: pointer;
+   		white-space:nowrap;	
+   		border-radius:100%;
+    	font-family:STXingkai;
+		}
+		* {
+	  outline: 0;
+	  padding: 0;
+	  margin: 0;
+	  border: 0;
+	}  
+#rtbutton {
+	background-color: black;
+    color: white;
+	border: 0.2em solid white; 
+	font-weight:bold;
+   	padding: 0.4em 1.2em;
+    text-align: center;
+    text-decoration: none;
+ 	display: inline-block;
+	font-size: 2.3em;
+ 	margin: 0.25em 0.25em;
+    cursor: pointer;
+    white-space:nowrap;	
+    border-radius:0.5em;
+}
+
+		.zgq p{
+			color:#d3eafa;
+		}
+
+		.xgq p{
+			color:#eccece;
+		}
+
+		.sgq p{
+			color:#cdd7f0;
+		}
+
+
+		.biaoti{
+   		 	color: red;
+   			font-size: 7em;
+		    text-align: center;
+  	 	 	white-space:nowrap;
+		}
+		.wenzi1{
+			text-align: center; /*IE*/
+			text-align: -moz-center; /*Firefox*/
+			text-align: -webkit-center; /*Chrome*/
+    		color: black;
+  	 	 	font-size: 4em;
+  	 	 	white-space:nowrap;
+		}
+		.wenzi2{
+			text-align: center;
+	    	color: white;
+	    	font-size: 2em;
+  	 	 	white-space:nowrap;
+		}
+		.wenzi4{
+			text-align: center;
+	    	color: purple;
+	    	font-size: 2em;
+  	 	 	white-space:nowrap;
+		}
+		.wenzi3{
+			position:relative;
+			text-align:center;
+			white-space:nowrap;overflow:hidden;text-overflow:ellipsis; 
+			font-size: 2em;
+		}
+.footer{
+    background-color:#323232;
+    font-size:2.3em;
+    color:white;
+    text-align:center;
+    margin:0;
+    padding:0;
+    width:100%;
+	clear:both;
+}
+.foot{
+    margin:0;
+}
+a {text-decoration: none}
+
 	</style>
 </head>
 <body>
 	<a href="#" id="rtbutton"><<返回</a>
 	<br>
-	<img src="./map_img/touming.png" class="center-block" style="width:15%">
+	<img src="./map_img/touming.png" class="center-block" style="width:14.5%">
 	<div class="row zgq">
 		<div class="col-sm-2 col-xs-2"></div><!--空列左-->
 		<div class="col-sm-3 col-xs-3">
@@ -107,7 +196,7 @@
 				<img src="./map_img/touming.png" class="center-block" style="width:2%">
 				<div class="tuwen" style="left:-0%">
 					<a href="#" >
-					<img  src="./map_img/zhuiguang/hat.png" class="tu " style="left:-0%;">
+					<img  src="./map_img/zhuiguang/hat.png" class="tu " style="left:-0%;width: 3em">
 					<p class="wenzi3">原谅帽</p></a>
 				</div>
 				<img src="./map_img/touming.png" class="center-block" style="width:2%">
@@ -128,20 +217,20 @@
 			<div class="colleft" >
 				<img src="./map_img/touming.png" class="center-block" style="width:3%">
 				<div class="tuwen" style="left:-0%">
-					<a href="#">
+					<a href="../intro/intro.html#2">
 					<img src="./map_img/xunguang/pen.png" class="tu " style="left:0%;width:2.8em">
 					<p class="wenzi3">妙笔寻光</p></a>
 				</div>
 				<img src="./map_img/touming.png" class="center-block" style="width:1%">
 				<div class="tuwen" style="left:-0%">
-					<a href="#">
-					<img src="./map_img/xunguang/yzdd.png" class="tu" style="left:0%;">
+					<a href="../intro/intro.html#3">
+					<img src="./map_img/xunguang/yzdd.png" class="tu" style="left:0%;width:3em;">
 					<p class="wenzi3">一站到底</p></a>
 				</div>
 				<img src="./map_img/touming.png" class="center-block" style="width:1%">
 				<div class="tuwen" style="left:-0%">
-					<a href="#">
-					<img src="./map_img/xunguang/song.png" class="tu " style="left:0%;">
+					<a href="../intro/intro.html#1">
+					<img src="./map_img/xunguang/song.png" class="tu " style="left:0%;width:2.8em;">
 					<p class="wenzi3">风中的歌</p></a>
 				</div>
 			</div>
@@ -151,7 +240,7 @@
 			<div class="colmid">
 				<img src="./map_img/touming.png" class="center-block" style="width:30.5%">
 				<div class="fenqu" >
-					<a href="#">
+					<a href="../intro/intro.html">
 					<img src="./map_img/xunguang/xunguang.png" class="tu center-block" ></a>
 				</div>
 			</div>
@@ -161,15 +250,14 @@
 			<div class="colright" style="">
 				<img src="./map_img/touming.png" class="center-block" style="width:6%">
 				<div class="tuwen" style="left:-0%">
-					<a href="#">
+					<a href="../intro/intro.html#4">
 					<img src="./map_img/xunguang/guangmu.png" class="tu " style="left:0%;width:2.4em">
 					<p class="wenzi3">光幕</p></a>
 				</div>
 				<img src="./map_img/touming.png" class="center-block" style="width:10%">
 				<div class="tuwen" style="left:-0%">
-					<a href="#">
 					<img  src="./map_img/xunguang/stage.png" class="tu " style="left:0%;width:2.5em">
-					<p class="wenzi3">舞台</p></a>
+					<p class="wenzi3">舞台</p>
 				</div>
 			</div>
 		</div>
@@ -198,7 +286,7 @@
 
 		<div class="col-sm-2 col-xs-2 ">
 			<div class="colmid">
-				<img src="./map_img/touming.png" class="center-block" style="width:25.5%">
+				<img src="./map_img/touming.png" class="center-block" style="width:24%">
 				<div class="fenqu">
 					<a href="#">
 					<img src="./map_img/shiguang/shiguang.png" class="tu center-block"></a>
