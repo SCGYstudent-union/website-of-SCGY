@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>科赴珞珈，少年弘毅</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="keywords" content="中国科学技术大学,少年班学院,学生会,中科大,少院">
+	<meta name="author" content="少年班学院学生会技术部">
+	<meta name="description" content="科赴珞珈，少年弘毅">
+	<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" >
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="../../../../../universal_css/menu.css" rel="stylesheet"/>
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../../../../universal_js/menu.js"></script>
+    <link href="../../news_css/new.css" rel="stylesheet"/>
+    <style type="text/css">
+    .row1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+	}
+	.row1 > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+	}
+    </style>
+</head>
+<body>
+	<div class="row hidden-sm hidden-xs" style="background-color:#323232; position:fixed; z-index:100; width:105%;">
+			<div class="col-sm-3 col-md-3 col-xl-3">
+				<button style="margin-left:10%" type="button" class="head-button btn"><a style="font-size:1.75vw;" class="head-button" href="../../../../../index.html">少年班学院学生会</a></button>
+			</div>
+			<div class="col-sm-3 col-md-3 col-xl-3"></div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" aria-pressed="false" data-toggle="dropdown" id="dropdownMenu1">
+					院会介绍 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_zzjg/zzjg.html">组织架构</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_xcsp/xcsp.html">宣传视频</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu2">
+					活动新闻 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_yhyw/yhyw.html">院会要文</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_tzgg/tzgg.html">通知公告</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3">
+					权益福利 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="http://scgyqy.ourscgy.ustc.edu.cn/" target="_blank">权益维护</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="http://mp.weixin.qq.com/s/TOAzFOAc9j__8a6ov2f6qg" target="_blank">少院纪念品</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabin2ex="-1" href="http://scgypf.ourscgy.ustc.edu.cn" target="_blank">少年班讲坛报名</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1">
+				<button type="button" class="head-button btn"><a class="head-button" href="../../../../../html_index/html_yk/yb.html">少院院刊</a></button>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1">
+				<button type="button" class="head-button btn"><a class="head-button" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a></button>
+			</div>
+	</div>
+	<div class="row hidden-md hidden-lg" style="text-align:center; background-color:#323232; position:fixed; z-index:98; width:105%;">
+		<div class="col-xs-12 hidden-sm"><p onclick="window.open('../../../../../index.html','_self')" class="head-title-xs">少院学生会</div>
+		<div class="col-sm-12 hidden-xs"><p onclick="window.open('../../../../../index.html','_self')" class="head-title-sm">少年班学院学生会</p></div>
+	</div>
+	<div class="hidden-md hidden-lg" style="position:fixed;z-index:99;">
+			<div type="button" class="hidden-sm butt btn" id="flip1">菜单</div>
+			<div type="button" class="hidden-xs butt btn" id="flip2">菜单</div>
+			<div class="flip_contain" id="pane">
+				<div type="button" class="pane_button butt" id="panel">院会介绍 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane1">
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_zzjg/zzjg.html">组织架构</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_xcsp/xcsp.html">宣传视频</a></div>
+				</div>      
+				<div type="button" class="pane_button butt" id="pane2">活动新闻 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane2">
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_yhyw/yhyw.html">院会要文</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_tzgg/tzgg.html">通知公告</a></div>
+				</div>      
+				<div type="button" class="pane_button butt" id="pane3">权益福利 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane3">
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://scgyqy.ourscgy.ustc.edu.cn/" target="_blank">权益维护</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://mp.weixin.qq.com/s/TOAzFOAc9j__8a6ov2f6qg" target="_blank">少院纪念品</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://scgypf.ourscgy.ustc.edu.cn" target="_blank">少年班讲坛报名</a></div>
+				</div>      
+				<div type="button" class="pane_button"><a class="butt" href="../../../../../html_index/html_yk/yb.html">少院院刊</a></div>
+				<div type="button" class="pane_button"><a class="butt" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a></div>
+			</div>
+	</div>
+	<div class="row row1">
+		<div class="hidden-xs col-md-2 col-sm-2 col-xl-2" style="background-image:url(../../news_material/bg.jpg);"></div>
+		<div class="hidden-sm hidden-md hidden-lg col-xs-1" style="background-color:#F7F7F7"></div>
+		<div class="cont col-md-8 col-sm-8 col-xs-10 col-xl-8">
+			<h2 class="text-center strong hd ">科赴珞珈，少年弘毅</h2>
+			<div class="main_sub_title"><p>发布时间:2018-12-12&emsp;&emsp;作者:中国科大少年班学院学生会</p></div>
+			<div class="zhengwen">
+				<p>
+					&emsp;&emsp;12月1日上午同学们抵达武汉大学，在志愿者的带领下在武大牌坊处合影作为整个行程的开端，据志愿者同学介绍：“武大的牌坊饱经风霜，历经多次破坏重建，才展现出今天国立武汉大学牌坊的风采，背后的文法理工农医更是武大的立身之本。”
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw1-1.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;欢声笑语的午餐过后同学们正式开始了武大之行。
+					<br>
+					&emsp;&emsp;经过一路艰难的攀登，同学们不禁感慨武大同学们的良好体育素质。终于我们到达了武大最美校舍有着百年历史的老斋舍，又名“樱花城堡”。据志愿者同学介绍：“这里是博士宿舍，所以同学们经过时都会保持安静以示对学长们的尊敬。”虽然经过时同学们不小心发出了一些声音，但路过的博士们却表现出了极大的包容。
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw2-1.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw2-2.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;经过老斋舍，我们到达了武大的狮子山山顶——自武大建校就存在的老图书馆，它见证了武大所经历的历史风雨，是武大的标志性建筑和精神象征，武大学生会的同学们纷纷热情的担任起了志愿者职务，以一位志愿者同学引导两位科大同学的方式进入了图书馆参观。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw3-1.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw3-2.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw3-3.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;首先映入眼帘的是一个充满历史气息的报告厅，武大的同学介绍：“这个报告厅可以称作武大活生生的历史，自建校以来，这里举办过数不胜数的讲座，各种名人大家都在这发表过他们的讲话。”在武大同学的建议下我们坐在这些有悠久历史的桌椅上留下了我们行程的第二张合影。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw4-1.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;在武大同学带领下我们参观了武大的校史馆，了解到了武大在抗日战争所见证的风风雨雨，也了解到了武大的蓬勃发展和巨大变革。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw5-1.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;出了校史馆后，在各位志愿者同学的带领下，同学们以小组的形式经过著名的樱花大道，开始攀登武大的象征——珞珈山。一路上欢声笑语，科大和武大的同学们交流着彼此学校的故事趣闻，不知不觉就登上了山顶。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw6-1.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw6-2.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;山上是著名的十八栋，周恩来、郭沫若等名人大家都曾在这里居住过，在讲解员的带领下同学们分批进入周恩来故居学习周恩来同志的事迹和了解他在武大的经历与生活，同时武大的同学们也热情地为我们补充着十八栋的来源和居住在里面名人名家的事迹。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw7-1.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw7-2.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw7-3.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw7-4.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;晚上武大同学精心为科大同学准备了欢迎晚会，武大同学们演唱的两首歌曲迅速拉近了两校同学的距离。
+
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw8-1.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw8-2.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;之后的破冰小游戏更是锦上添花，同学们的积极参与，使屋里充满了欢声笑语，进一步加深了两校同学的友谊。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw9-1.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw9-2.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw9-3.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw9-4.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;第一天的行程就在同学们的欢声笑语中结束了。
+       				<br>
+       				&emsp;&emsp;12月2日早上在武大同学带领下我们参观了由武大校友捐建的万林博物馆，正值武大建校125周年，关内陈列着学校百余年办学过程中传承下来的一些珍贵文物和各界校友捐赠的艺术作品，真是叹为观止。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw10-1.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw10-2.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw10-3.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw10-4.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;以一张合影为结尾，同学们结束了此行的参观部分。
+
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw11-1.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;之后，武大弘毅学堂学生会代表和科大少年班学院学生会代表在本科生院楼举行经验交流会。
+       				<br>
+       				&emsp;&emsp;首先，双方代表进行交换礼物，正值武大校庆，武大的代表送给科大武大的纪念文化衫；同时正值科大少年班成立40周年暨建院10周年，科大的代表送给武大少院历史合集和当期院刊，作为回礼。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw12-1.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw12-2.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;之后，双方代表团成员分别进行自我介绍，并对彼此学生会的基本情况进行了了解。双方就在学生会工作中遇到的问题进行了深入交流与探讨，对接下来学生会的工作进行起到了极大的帮助作用。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw13-1.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw13-2.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw13-3.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw13-4.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;午餐过后，是分部门讨论时间，各部门就工作的具体细节进行了深入的探讨，互相学习，互相借鉴，进一步加固了双方学生会的伙伴关系。
+
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./new1_material/xw14-1.jpg"/>
+					<img class="img-responsive center-block" src="./new1_material/xw14-2.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;就这样，在微微的细雨中，我们结束了武大之行。
+				<br>
+					&emsp;&emsp; 本次活动，同学们相互交流，深化了武大与科大的友好关系，了解到了武大的方方面面，同时双方学生会的经验交流也为未来工作的开展起到了极大的促进作用，可谓收获颇丰。
+				</p>
+			</div>
+		</div>
+		<div class="hidden-xs col-md-2 col-sm-2 col-xl-2" style="background-image:url(../../news_material/bg.jpg);"></div>
+		<div class="hidden-sm hidden-md hidden-lg col-xs-1" style="background-color:#F7F7F7"></div>
+	</div>
+	<div class="footer">
+		<p class="foot">少年班学院学生会© 2017‐2018 All rights reserved.</p>
+		<a class="foot" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a>
+	</div>
+</body>
+</html>
