@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>少年游|随光前行</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="keywords" content="中国科学技术大学,少年班学院,学生会,中科大,少院">
+	<meta name="author" content="少年班学院学生会技术部">
+	<meta name="description" content="少年游|随光前行">
+	<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" >
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="../../../../../universal_css/menu.css" rel="stylesheet"/>
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../../../../universal_js/menu.js"></script>
+    <link href="../../news_css/new.css" rel="stylesheet"/>
+    <style type="text/css">
+    .row1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+	}
+	.row1 > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+	}
+    </style>
+</head>
+<body>
+	<div class="row hidden-sm hidden-xs" style="background-color:#323232; position:fixed; z-index:100; width:105%;">
+			<div class="col-sm-3 col-md-3 col-xl-3">
+				<button style="margin-left:10%" type="button" class="head-button btn"><a style="font-size:1.75vw;" class="head-button" href="../../../../../index.html">少年班学院学生会</a></button>
+			</div>
+			<div class="col-sm-3 col-md-3 col-xl-3"></div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" aria-pressed="false" data-toggle="dropdown" id="dropdownMenu1">
+					院会介绍 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_zzjg/zzjg.html">组织架构</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_xcsp/xcsp.html">宣传视频</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu2">
+					活动新闻 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_yhyw/yhyw.html">院会要文</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_tzgg/tzgg.html">通知公告</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3">
+					权益福利 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="http://scgyqy.ourscgy.ustc.edu.cn/" target="_blank">权益维护</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="http://mp.weixin.qq.com/s/TOAzFOAc9j__8a6ov2f6qg" target="_blank">少院纪念品</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabin2ex="-1" href="http://scgypf.ourscgy.ustc.edu.cn" target="_blank">少年班讲坛报名</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1">
+				<button type="button" class="head-button btn"><a class="head-button" href="../../../../../html_index/html_yk/yb.html">少院院刊</a></button>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1">
+				<button type="button" class="head-button btn"><a class="head-button" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a></button>
+			</div>
+	</div>
+	<div class="row hidden-md hidden-lg" style="text-align:center; background-color:#323232; position:fixed; z-index:98; width:105%;">
+		<div class="col-xs-12 hidden-sm"><p onclick="window.open('../../../../../index.html','_self')" class="head-title-xs">少院学生会</div>
+		<div class="col-sm-12 hidden-xs"><p onclick="window.open('../../../../../index.html','_self')" class="head-title-sm">少年班学院学生会</p></div>
+	</div>
+	<div class="hidden-md hidden-lg" style="position:fixed;z-index:99;">
+			<div type="button" class="hidden-sm butt btn" id="flip1">菜单</div>
+			<div type="button" class="hidden-xs butt btn" id="flip2">菜单</div>
+			<div class="flip_contain" id="pane">
+				<div type="button" class="pane_button butt" id="panel">院会介绍 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane1">
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_zzjg/zzjg.html">组织架构</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_xcsp/xcsp.html">宣传视频</a></div>
+				</div>      
+				<div type="button" class="pane_button butt" id="pane2">活动新闻 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane2">
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_yhyw/yhyw.html">院会要文</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_tzgg/tzgg.html">通知公告</a></div>
+				</div>      
+				<div type="button" class="pane_button butt" id="pane3">权益福利 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane3">
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://scgyqy.ourscgy.ustc.edu.cn/" target="_blank">权益维护</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://mp.weixin.qq.com/s/TOAzFOAc9j__8a6ov2f6qg" target="_blank">少院纪念品</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://scgypf.ourscgy.ustc.edu.cn" target="_blank">少年班讲坛报名</a></div>
+				</div>      
+				<div type="button" class="pane_button"><a class="butt" href="../../../../../html_index/html_yk/yb.html">少院院刊</a></div>
+				<div type="button" class="pane_button"><a class="butt" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a></div>
+			</div>
+	</div>
+	<div class="row row1">
+		<div class="hidden-xs col-md-2 col-sm-2 col-xl-2" style="background-image:url(../../news_material/bg.jpg);"></div>
+		<div class="hidden-sm hidden-md hidden-lg col-xs-1" style="background-color:#F7F7F7"></div>
+		<div class="cont col-md-8 col-sm-8 col-xs-10 col-xl-8">
+			<h2 class="text-center strong hd ">少年游|随光前行</h2>
+			<div class="main_sub_title"><p>发布时间:2018-12-14&emsp;&emsp;作者:中国科大少年班学院学生会</p></div>
+			<div class="zhengwen">
+				<p>
+					&emsp;&emsp;一道微光藏匿在少年时的梦境中，期盼着谁去寻找。
+					<br>
+					&emsp;&emsp;可是，季节流转，属于我们的那道光芒渐渐远去，但当意识到它的离开时，想要去追逐，却无法触及。
+					<br>
+					&emsp;&emsp;终于，我们精疲力尽，却在停步之时发现——那道光并未远去，它在脚边静静地躺着，只待弯腰拾起.
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/001.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;2018年12月8日晚7时，由中国科学技术大学少年班学院学生会开办的少年游，以星空三部曲为主题，分为“追光”、“寻光”、“拾光”三区，带我们重温少年时的美好，寄托对未来的期许。在少年班学院的同学们的精心准备下，中区宿舍楼外变成了星光闪烁的梦幻世界。其间人潮涌动，热闹非凡，道路两侧的摊位为每一个参与者创造出了一个个美好愿景。
+				</p>
+
+				<hr/>
+				<h3 style="color:#800080"><strong>前期准备</strong></h3>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/002.jpg"/>
+					<img class="img-responsive center-block" src="./material/003.jpg"/>
+					<img class="img-responsive center-block" src="./material/004.jpg"/>
+					<img class="img-responsive center-block" src="./material/005.jpg"/>
+					<img class="img-responsive center-block" src="./material/006.jpg"/>
+					<p style="color:#a0a0a0; text-align:center;">少年游海报</p>
+				</div>
+
+				<hr/>
+				<h3 style="color:#800080"><strong>少年游当天</strong></h3>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/000.png"/>
+					<p style="color:#a0a0a0; text-align:center;">中区2、4号楼的同学拼出少年二字</p>
+				</div>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/007.jpg"/>
+					<img class="img-responsive center-block" src="./material/008.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;在现场，不时会有各类快闪活动，吸引大家驻足观看
+				</p>
+				<hr/>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/009.jpg"/>
+					<img class="img-responsive center-block" src="./material/010.jpg"/>
+					<img class="img-responsive center-block" src="./material/011.jpg"/>
+					<img class="img-responsive center-block" src="./material/012.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;同学们在场内或是为自己寄送未来的祝愿,或是为他人排解忧愁，或是为大家留下句句箴言
+				</p>
+				<hr/>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/013.jpg"/>
+					<img class="img-responsive center-block" src="./material/014.jpg"/>
+					<img class="img-responsive center-block" src="./material/015.jpg"/>
+					<img class="img-responsive center-block" src="./material/016.jpg"/>
+					<img class="img-responsive center-block" src="./material/017.jpg"/>
+					<img class="img-responsive center-block" src="./material/018.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;丰富的游戏活动吸引了来自各地的人们参与其中,回忆童年时期的欢乐与美好
+				</p>
+				<hr/>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/019.jpg"/>
+					<img class="img-responsive center-block" src="./material/020.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;此外，记录剪影的幕墙，为所有人留下这一刻的记忆
+				</p>
+				<hr/>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/021.jpg"/>
+					<img class="img-responsive center-block" src="./material/022.jpg"/>
+					<img class="img-responsive center-block" src="./material/023.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;猜灯谜、"一站到底"、续写故事，趣味横生也让人绞尽脑汁
+				</p>
+				<hr/>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/024.jpg"/>
+					<img class="img-responsive center-block" src="./material/025.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;各式童年的美食不仅让人大饱口福，还在寒冷的冬天送来温暖
+				</p>
+				<hr/>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/026.jpg"/>
+					<img class="img-responsive center-block" src="./material/027.jpg"/>
+					<img class="img-responsive center-block" src="./material/028.jpg"/>
+				</div>
+				<p>
+					&emsp;&emsp;激萌可爱的NPC与大家现场互动（被调戏）
+				</p>
+
+				<hr/>
+				<h3 style="color:#800080"><strong>活动后续</strong></h3>
+				<p>&emsp;&emsp;夜色渐深、人流散去，可余温未尽，残存的灯火还在讲述着前一刻的欢乐，还在带领着每一个人寻觅少年时那天真无邪的自己，还在默默地带领我们走向来时的路。或许有一天，灯光暗淡，但少年时那悄悄藏匿在某个角落的微光，将化作繁星点点，让迷失在黑暗中的我们向着黎明走去。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/029.jpg"/>
+				</div>
+
+				<hr/>
+				<h3 style="color:#800080"><strong>鸣谢</strong></h3>
+				<p>
+					&emsp;&emsp;本次少年游的圆满完成，离不开每一位同学的大力支持。在最后，我们向中区宿舍同学们对少年游活动的理解表示诚挚的谢意，也同样感谢少年班学院、中区物业、宿管姐姐及安保人员的热心帮助，少年班学院团总支的宝贵建议，及少年班学院学生会全体成员的倾力付出.
+       				<br>
+       				&emsp;&emsp;此外，还要感谢合肥新航道雅思托福培训学校对少年游活动的大力赞助。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/030.jpg"/>
+				</div>
+				<h3 style="text-align: center;"><strong>
+					&emsp;&emsp;又是一年少年游。
+					<br>
+					&emsp;&emsp;我们，明年再见——
+				</strong></h3>
+			</div>
+		</div>
+		<div class="hidden-xs col-md-2 col-sm-2 col-xl-2" style="background-image:url(../../news_material/bg.jpg);"></div>
+		<div class="hidden-sm hidden-md hidden-lg col-xs-1" style="background-color:#F7F7F7"></div>
+	</div>
+	<div class="footer">
+		<p class="foot">少年班学院学生会© 2017‐2018 All rights reserved.</p>
+		<a class="foot" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a>
+	</div>
+</body>
+</html>
