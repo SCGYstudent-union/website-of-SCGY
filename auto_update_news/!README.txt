@@ -3,10 +3,11 @@ Auto update news
 author:RubyL
 date:2019/3/2
 discription:新闻更新懒人包
-version:1.0
+version:1.5
 ---------------------------------------
-源码update_news.py文件也一并上传了，欢迎报bug
-email:ruby_ocelot@mail.ustc.edu.cn
+version1.5更新：
+1.由于搜狗搜索的反爬虫加强了，目前在使用auto_renew.exe时需要手动输入一个链接
+2.为了解决标题-摘要错位bug（由多图文消息导致），我用了别人现成的API：https://github.com/Chyroc/WechatSogou。然而在import这个API之后，用pyinstaller打包成exe以后会出现“ModuleNotFoundError：No module named werkzeug.exceptions”的报错，解决方案是把别人代码里要用的部分直接复制粘贴到我自己的.py里，就不import了。打包问题暂时解决，既然有一部分代码是抄过来的，我就不放.py源码了。
 ---------------------------------------
 开发目的：
 1）免除将微信版新闻转为少院网站版新闻时复制粘贴的烦恼，缩短日常更新耗时
@@ -34,6 +35,7 @@ git命令：git pull git@github.com:BARaphael/website-of-SCGY.git master
 （二）修改网页内容
 p.s.此处建议用懒人exe，避免手动修改破坏格式
 懒人：auto_renewX.X.exe （有可能遇到验证码，并需要手动决定是否更新/更新类别）
++由于搜狗搜索的反爬虫加强了，有一个链接需要手动获取才不会被反爬虫。目前会自动用IE浏览器打开搜狗搜索的链接，公众号“中国科大少年班学院学生会”的链接为脚本所需（复制链接以后右键粘贴即可）
 Or（不推荐手动）
 手动改注意看注释，以及本txt后面的注意事项，避免破坏格式导致以后使用懒人包出错
 
