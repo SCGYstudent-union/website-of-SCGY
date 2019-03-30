@@ -21,7 +21,7 @@ $mail->SMTPSecure = "ssl";
 $mail->Host = "smtp.163.com";
 $mail->Port = 465;
 $mail->Username = "scgyunion@163.com";
-$mail->Password = "scgysu";
+$mail->Password = "";
 $mail->SetFrom("scgyunion@163.com", "someone");
 $mail->AddReplyTo("scgyunion@163.com", "someone");
 $mail->Subject = "少院网站——联系我们";
