@@ -1,0 +1,3 @@
+[submodule "scgy-tech-planet"]
+	path = scgy-tech-planet
+	url = https://github.com/libreliu/scgy-tech-planet.git
