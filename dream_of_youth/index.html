@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8"/>
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scaleable=no,minimum-scale=1.0,maxmum-scale=1.0"/>
+    	<meta name="keywords" content="少年游,2018,中科大,中国科学技术大学"/>
+	    <style type="text/css">
+	    	body{
+	    		background-color: black;
+	    	}
+	       .background1
+	       {
+	       	  background-image:url("index_img/background1.jpg");
+	       	  background-repeat: no-repeat;
+	       	  background-attachment:fixed;
+	       	  background-size:130%;
+	          background-position:center top;
+	       }
+        </style>
+        <title>2018-少年游-主页</title>
+        <script type="text/javascript">
+        	function menu1()
+        	{
+        		document.getElementById("title").innerHTML='<img src="index_img/picture1.png" style="width:165px;height:110px;float:right"/><h3 style="color:white;text-align:center">拾光</h2><p style="color:white;">萤火虫的光，能照亮整个童年</p>';
+        		document.getElementById("title").href="./intro/intro-shiguang.html";
+        		document.getElementById("button").innerHTML='<img src="index_img/picture9.png" style="width:165px;height:110px;float:left"/><h3 style="color:white;text-align:center">寻光</h2><p style="color:white;position:relative;left:5%">在黑夜中寻找光明，在未知里寻找自我</p>';
+        		document.getElementById("pic").innerHTML='<img src="index_img/picture3.png" style="width:165px;height:110px;float:right"/><h3 style="color:white;text-align:center">追光</h2><p style="color:white;">芸芸众生，万千灯火，你能否追上自己的那一片光明，一盏灯火</p>';
+        		document.getElementById("pic").href="./intro/intro-zhuiguang.html";
+        		document.getElementById("button").href="./intro/intro-xunguang.html";
+        		document.getElementById("button1").style='text-align: left;position: absolute;top:30%;left:5%;width:90%';
+        		document.getElementById("title1").style='text-align:left;position:absolute;top:5%;right:5%;width:90%'
+        		document.getElementById("menu2").innerHTML='<img src="index_img/menu2.png" style="width:60px;height: 75px;" onclick="menu2()"/>';
+        		document.getElementById("menu1").innerHTML="<p></p>";
+        	}	
+        	function menu2()
+        	{
+                document.getElementById("pic").innerHTML="";
+        		document.getElementById("title").innerHTML='<img src="index_img/title1.png"/>';
+        		document.getElementById("title").href="NULL";
+        		document.getElementById("button").innerHTML='<img src="index_img/button.png" style="width:100px;height:100px"/>';
+        		document.getElementById("button").href="./map/map.html";
+        		document.getElementById("menu1").innerHTML='<img src="index_img/menu.png" style="width:60px;height: 75px;" onclick="menu1()"/>';
+        		document.getElementById("menu2").innerHTML="<p></p>";
+        		document.getElementById("button1").style='text-align: center;position: relative;top:130px;left:-5px';
+        		document.getElementById("title1").style='text-align:center;position:relative;top:20px;';
+        	}
+        </script>
+</head>
+<body class="background1" >
+	<div  id="title1" style="text-align:center;position:relative;top:20px;">
+		<a id="title" href="./video/video.html">
+			<img src="index_img/title1.png"/>
+		</a>
+	</div>
+	<div id="button1" style="text-align: center;position: relative;top:130px;left:-5px">
+		<a id="button" href="./map/map.html">
+			<img src="index_img/button.png" style="width:100px;height:100px;"/>
+		</a>
+	</div>
+	<div  style="text-align:left;position:absolute;top:55%;right:5%;width:90%">
+		<a id="pic">
+		</a>
+	</div>
+	<div>
+		<p id="menu1" style="position: absolute;left: 0px;top: 50%;">
+			<img src="index_img/menu.png" style="width:60px;height: 75px;" onclick="menu1()"/>
+		</p>
+		<p id="menu2" style="position: absolute;right: 0px;top: 50%;">
+		</p>
+	</div>
+</body>
+</html>

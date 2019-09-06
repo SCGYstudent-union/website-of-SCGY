@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>少年游大地图</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="map.css" rel="stylesheet"/>
+	<style type="text/css">
+		body 
+		{
+			background-image:url('./map_img/bg2.png');
+		    background-size:100%;
+		    background-repeat:no-repeat;
+   			background-color: #282727;
+		}
+		.tuwen .tu{
+			width: 20%;
+			position:relative;
+		}
+		.fenqu .tu{
+			height: 60%;
+			width:60%;
+		}
+
+		.colleft .wenzi3{
+			text-align: right;
+		}
+		.colright .wenzi3{
+			text-align: left;
+		}
+		.tuwen{
+			position:relative;
+			display:inline
+		}
+		.colleft{
+			position: relative;
+			left: -2%;
+			text-align: right;
+		}
+		.colmid{
+			position: relative;
+			left: -3%;
+		}
+		.colright{
+			position: relative;
+			left: -2%;
+			text-align: left;
+		}
+		.row{
+			margin:0;
+		}
+		#finishbt {
+		background-color: black;
+    	color: white;
+		border: 0.1em solid white; 
+	   	padding: 0 0;
+	   	font-size: 5em;	
+	 	text-align: center;
+	 	text-decoration: none;
+	 	display: inline-block;
+	 	width:40%;
+    	cursor: pointer;
+   		white-space:nowrap;	
+   		border-radius:0%;
+    	font-family:STXingkai;
+		}
+		* {
+		outline: 0;
+		padding: 0;
+		margin: 0;
+		border: 0;
+		}  
+	#rtbutton {
+	background-color: black;
+    color: white;
+	border: 0.2em solid white; 
+	font-weight:bold;
+   	padding: 0.4em 1.2em;
+    text-align: center;
+    text-decoration: none;
+ 	display: inline-block;
+	font-size: 2.3em;
+ 	margin: 0.25em 0.25em;
+    cursor: pointer;
+    white-space:nowrap;	
+    border-radius:0.5em;
+}
+
+		.zgq p{
+			color:#d3eafa;
+		}
+
+		.xgq p{
+			color:#eccece;
+		}
+
+		.sgq p{
+			color:#cdd7f0;
+		}
+
+		.wenzi3{
+			position:relative;
+			text-align:center;
+			white-space:nowrap;overflow:hidden;text-overflow:ellipsis; 
+			font-size: 2em;
+		}
+.footer{
+    background-color:#323232;
+    font-size:2.3em;
+    color:white;
+    text-align:center;
+    margin:0;
+    padding:0;
+    width:100%;
+	clear:both;
+}
+.foot{
+    margin:0;
+}
+a {text-decoration: none}
+
+	</style>
+</head>
+<body>
+	<a href="../index.html" id="rtbutton"><<返回</a>
+	<br>
+	<img src="./map_img/touming.png" class="center-block" style="width:14.5%">
+	<div class="row zgq">
+		<div class="col-sm-2 col-xs-2"></div><!--空列左-->
+		<div class="col-sm-3 col-xs-3">
+			<div class="colleft" style="">
+				<img src="./map_img/touming.png" class="center-block" style="width:10%"><!--百分比估计还是会出锅，到时候为每个空配一张特定大小透明的png好了-->
+				<div class="tuwen" style="left:0%">
+					<a href="../intro/intro-zhuiguang.html#4">
+					<img src="./map_img/zhuiguang/light.png" class="tu" style="left:0%;width:2.2em;">
+					<p class="wenzi3">逐光寄梦</p></a>
+				</div>
+				<img src="./map_img/touming.png" class="center-block" style="width:11%">
+				<div class="tuwen" style="left:0%">
+					<a href="../intro/intro-zhuiguang.html#2">
+					<img src="./map_img/zhuiguang/shadow.png" class="tu " style="left:0%;width:1.8em;">
+					<p class="wenzi3">随光潜影</p></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-2 col-xs-2 ">
+			<div class="colmid">
+				<img src="./map_img/touming.png" class="center-block" style="width:30%">
+				<div class="fenqu" >
+					<a href="../intro/intro-zhuiguang.html">
+					<img src="./map_img/zhuiguang/zhuiguang.png" class="tu center-block" ></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-xs-3 ">
+			<div class="colright" style="">
+				<img src="./map_img/touming.png" class="center-block" style="width:2%">
+				<div class="tuwen" style="left:-0%">
+					<a href="../intro/intro-zhuiguang.html#5" >
+					<img src="./map_img/zhuiguang/words.png" class="tu " style="left:-0%;width:2.8em;">
+					<p class="wenzi3">追光寄语</p></a>
+				</div>
+				<img src="./map_img/touming.png" class="center-block" style="width:2%">
+				<div class="tuwen" style="left:-0%">
+					<a href="../intro/intro-zhuiguang.html#3" >
+					<img  src="./map_img/zhuiguang/hat.png" class="tu " style="left:-0%;width: 3em">
+					<p class="wenzi3">原谅帽</p></a>
+				</div>
+				<img src="./map_img/touming.png" class="center-block" style="width:2%">
+				<div class="tuwen" style="left:-0%">
+					<a href="../intro/intro-zhuiguang.html#1" >
+					<img  src="./map_img/zhuiguang/loveexam.png" class="tu " style="left:-0%;width: 2.6em;">
+					<p class="wenzi3">爱之检验</p></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2 col-xs-2 "></div><!--空列右-->
+	</div>
+	
+
+	<div class="row xgq">
+		<div class="col-sm-2 col-xs-2"></div><!--空列左-->
+		<div class="col-sm-3 col-xs-3">
+			<div class="colleft" >
+				<img src="./map_img/touming.png" class="center-block" style="width:3%">
+				<div class="tuwen" style="left:-0%">
+					<a href="../intro/intro-xunguang.html#2">
+					<img src="./map_img/xunguang/pen.png" class="tu " style="left:0%;width:2.8em">
+					<p class="wenzi3">妙笔寻光</p></a>
+				</div>
+				<img src="./map_img/touming.png" class="center-block" style="width:1%">
+				<div class="tuwen" style="left:-0%">
+					<a href="../intro/intro-xunguang.html#3">
+					<img src="./map_img/xunguang/yzdd.png" class="tu" style="left:0%;width:3em;">
+					<p class="wenzi3">一站到底</p></a>
+				</div>
+				<img src="./map_img/touming.png" class="center-block" style="width:1%">
+				<div class="tuwen" style="left:-0%">
+					<a href="../intro/intro-xunguang.html#1">
+					<img src="./map_img/xunguang/song.png" class="tu " style="left:0%;width:2.8em;">
+					<p class="wenzi3">风中的歌</p></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-2 col-xs-2 ">
+			<div class="colmid">
+				<img src="./map_img/touming.png" class="center-block" style="width:30%">
+				<div class="fenqu" >
+					<a href="../intro/intro-xunguang.html">
+					<img src="./map_img/xunguang/xunguang.png" class="tu center-block" ></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-xs-3 ">
+			<div class="colright" style="">
+				<img src="./map_img/touming.png" class="center-block" style="width:6%">
+				<div class="tuwen" style="left:-0%">
+					<a href="../intro/intro-xunguang.html#4">
+					<img src="./map_img/xunguang/guangmu.png" class="tu " style="left:0%;width:2.4em">
+					<p class="wenzi3">光幕</p></a>
+				</div>
+				<img src="./map_img/touming.png" class="center-block" style="width:10%">
+				<div class="tuwen" style="left:-0%">
+					<img  src="./map_img/xunguang/stage.png" class="tu " style="left:0%;width:2.5em">
+					<p class="wenzi3">舞台</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2 col-xs-2 "></div><!--空列右-->
+	</div>
+
+
+	<div class="row sgq">
+		<div class="col-sm-2 col-xs-2"></div><!--空列左-->
+		<div class="col-sm-3 col-xs-3">
+			<div class="colleft" style="">
+				<img src="./map_img/touming.png" class="center-block" style="width:1%">
+				<div class="tuwen" style="left:0%">
+					<a href="../intro/intro-shiguang.html#3">
+					<img src="./map_img/shiguang/food.png" class="tu " style="left:0%;width:2.4em">
+					<p class="wenzi3">舌尖上的童年</p></a>
+				</div>
+				<img src="./map_img/touming.png" class="center-block" style="width:3%">
+				<div class="tuwen" style="left:0%">
+					<a href="../intro/intro-shiguang.html#4">
+					<img src="./map_img/shiguang/lantern.png" class="tu " style="left:0%;width:2.6em">
+					<p class="wenzi3">灯谜</p></a>
+				</div>
+
+				<img src="./map_img/touming.png" class="center-block" style="width:3%">
+				<div class="tuwen" style="left:-0%">
+					<a href="../intro/intro-shiguang.html#1">
+					<img  src="./map_img/shiguang/game.png" class="tu " style="left:0%;width:2.8em">
+					<p class="wenzi3">童年的游戏</p></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-2 col-xs-2 ">
+			<div class="colmid">
+				<img src="./map_img/touming.png" class="center-block" style="width:23.5%">
+				<div class="fenqu">
+					<a href="../intro/intro-shiguang.html">
+					<img src="./map_img/shiguang/shiguang.png" class="tu center-block"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-xs-3 ">
+			<div class="colright" style="">
+				<img src="./map_img/touming.png" class="center-block" style="width:0%">
+				<div class="tuwen" style="left:0%">
+					<a href="../intro/intro-shiguang.html#3">
+					<img src="./map_img/shiguang/food.png" class="tu " style="left:0%;width:2.4em">
+					<p class="wenzi3">舌尖上的童年</p></a>
+				</div>
+
+				<img src="./map_img/touming.png" class="center-block" style="width:3%">
+				<div class="tuwen" style="left:0%">
+					<a href="../intro/intro-shiguang.html#2">
+					<img src="./map_img/shiguang/circle.png" class="tu " style="left:0%;width:2.6em">
+					<p class="wenzi3">套圈</p></a>
+				</div>
+
+				<img src="./map_img/touming.png" class="center-block" style="width:3%">
+				<div class="tuwen" style="left:-0%">
+					<a href="../intro/intro-shiguang.html#1">
+					<img  src="./map_img/shiguang/game.png" class="tu " style="left:0%;width:2.8em">
+					<p class="wenzi3">童年的游戏</p></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2 col-xs-2 "></div><!--空列右-->
+	</div>
+
+
+
+	<img src="./map_img/touming.png" class="center-block" style="width:8%">
+	<!--p class="wenzi2">听说完成所有活动会有好事发生哦：D</p>-->
+	<div style="text-align: center;">
+	<a href="../video/video.html"><button id="finishbt">少年游视频</button></a>
+    </div>
+	
+	<img src="./map_img/touming.png" class="center-block" style="width:13%">
+	<div class="row" style="text-align:center;">
+		<div class="footer">
+			<p class="foot">少年班学院学生会© 2018‐2019 All rights reserved.</p>
+			<a class="foot" href="http://202.38.70.99/html_index/html_lxwm/lxwm.html">联系我们</a>
+		</div>
+	</div>
+</body>
+</body>
+</html>

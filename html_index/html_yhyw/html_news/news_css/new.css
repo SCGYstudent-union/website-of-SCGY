@@ -1,0 +1,68 @@
+   	.posi{
+   		top: 70px;
+		font-size: 12px;
+		color: #000000;
+    }
+    a.pos:link{
+    	color:grey;
+    	text-decoration:none;
+    }
+    a.pos:visited{
+    	color:grey;
+    	text-decoration:none;
+    }
+    a.pos:hover{
+    	color:#3D88EA;
+    	text-decoration:none;
+    }
+    a.pos:active{
+    	color:#3D88EA;
+    	text-decoration:none;
+    }
+    h2.hd{
+    	font-size: 30px;
+        border-bottom:#ACACAC 2px solid;
+        padding-bottom: 25px;
+    }
+    .cont{
+    	padding-top: 90px;
+    	padding-bottom: 50px;
+        background-color:#F7F7F7;
+    }
+    .cont p{
+		font-size: 16px;
+    }
+    .zhengwen {
+        padding-top: 20px;
+    }
+    .cont-img{
+        text-align:center;
+        padding-top:0;
+        padding-bottom: 0;
+        margin-top:20px;
+        margin-bottom:20px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left:0;
+        padding-right:0;
+    }
+    .gray_word{
+    	color:gray;
+    	text-align:center;
+    	padding-bottom:10px;
+    }
+    .gray_word p{
+    	font-size:7px;
+<<<<<<< HEAD
+    }
+    .main_sub_title{
+        font-size:10px;
+        color:gray;
+        text-align:center;
+=======
+>>>>>>> upstream/master
+    }
+    .video{
+    	text-align:center;
+    	margin:0 auto;
+    }

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>中国科学技术大学少年班学院学生会</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="keywords" content="少院,联系,联系我们,中国科学技术大学,少年班学院,学生会,中科大">
+	<meta name="author" content="少年班学院学生会技术部">
+	<meta name="description" content="少年班学院学生会-联系我们">
+	<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" >
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="../../universal_css/menu.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./yhyw_css/style.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../universal_js/menu.js"></script>
+    <style type="text/css">
+    .img{
+    	opacity:0.5;
+    	position:fixed;
+    	z-index:-1;
+    	padding-top:5%;
+    	padding-left:30%;
+    }
+    </style>
+</head>
+<body>
+	<div class="row hidden-sm hidden-xs" style="background-color:#323232; position:fixed; z-index:100; width:105%;">
+			<div class="col-sm-3 col-md-3 col-xl-3">
+				<button style="margin-left:10%" type="button" class="head-button btn"><a style="font-size:1.75vw;" class="head-button" href="../../index.html">少年班学院学生会</a></button>
+			</div>
+			<div class="col-sm-3 col-md-3 col-xl-3"></div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" aria-pressed="false" data-toggle="dropdown" id="dropdownMenu1">
+					院会介绍 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../html_index/html_zzjg/zzjg.html">组织架构</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../html_index/html_xcsp/xcsp.html">宣传视频</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu2">
+					活动新闻 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../html_index/html_yhyw/yhyw.html">院会要文</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../html_index/html_tzgg/tzgg.html">通知公告</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3">
+					权益福利 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="http://scgyqy.ourscgy.ustc.edu.cn/" target="_blank">权益维护</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="http://mp.weixin.qq.com/s/TOAzFOAc9j__8a6ov2f6qg" target="_blank">少院纪念品</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabin2ex="-1" href="http://scgypf.ourscgy.ustc.edu.cn" target="_blank">少年班讲坛报名</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1">
+				<button type="button" class="head-button btn"><a class="head-button" href="../../html_index/html_yk/yb.html">少院院刊</a></button>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1">
+				<button type="button" class="head-button btn"><a class="head-button" href="../../html_index/html_lxwm/lxwm.html">联系我们</a></button>
+			</div>
+	</div>
+	<div class="row hidden-md hidden-lg" style="text-align:center; background-color:#323232; position:fixed; z-index:98; width:105%;">
+		<div class="col-xs-12 hidden-sm"><p onclick="window.open('../../index.html','_self')" class="head-title-xs">少院学生会</div>
+		<div class="col-sm-12 hidden-xs"><p onclick="window.open('../../index.html','_self')" class="head-title-sm">少年班学院学生会</p></div>
+	</div>
+	<div class="hidden-md hidden-lg" style="position:fixed;z-index:99;">
+			<div type="button" class="hidden-sm butt btn" id="flip1">菜单</div>
+			<div type="button" class="hidden-xs butt btn" id="flip2">菜单</div>
+			<div class="flip_contain" id="pane">
+				<div type="button" class="pane_button butt" id="panel">院会介绍 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane1">
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../html_index/html_zzjg/zzjg.html">组织架构</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../html_index/html_xcsp/xcsp.html">宣传视频</a></div>
+				</div>      
+				<div type="button" class="pane_button butt" id="pane2">活动新闻 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane2">
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../html_index/html_yhyw/yhyw.html">院会要文</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../html_index/html_tzgg/tzgg.html">通知公告</a></div>
+				</div>      
+				<div type="button" class="pane_button butt" id="pane3">权益福利 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane3">
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://scgyqy.ourscgy.ustc.edu.cn/" target="_blank">权益维护</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://mp.weixin.qq.com/s/TOAzFOAc9j__8a6ov2f6qg" target="_blank">少院纪念品</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://scgypf.ourscgy.ustc.edu.cn" target="_blank">少年班讲坛报名</a></div>
+				</div>      
+				<div type="button" class="pane_button"><a class="butt" href="../../html_index/html_yk/yb.html">少院院刊</a></div>
+				<div type="button" class="pane_button"><a class="butt" href="../../html_index/html_lxwm/lxwm.html">联系我们</a></div>
+			</div>
+	</div>
+	<div class="img">
+		<img src="./yhyw_material/psb.jpg"/>
+	</div>
+	<div class="row" style="padding-top:2px;"><br></div>
+    <div class="cd-container" id="cd-timeline" style="font-size:200%;">
+
+        <!--replace_tag-->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_06_12/new_2019_06_12.html">少年班学院学生会全员大会顺利召开</a></h2>
+                <p>2019年6月10日，第十一届少年班学院学生会全员大会顺利召开<br /></p>
+                <span class="cd-date">2019-06-12</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_06_09/new_2019_06_09.html">少年行乒乓球篮球比赛圆满结束</a></h2>
+                <p>为了丰富大学生的课余活动，提高大学生的体育素质，少年行体育节举办了篮球赛、乒乓球赛。<br /></p>
+                <span class="cd-date">2019-06-09</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_05_04/new_2019_05_04.html">“少年行”体育节体验活动周圆满结束</a></h2>
+                <p>这次少年行体育节体验活动让同学们有机会体验各式各样的活动，极大的增加了同学们对运动的兴趣，既锻炼了身体，也丰富了大家的课余生活。而篮球赛和乒乓球赛还在进行当中，大家尽请期待哦。<br /></p>
+                <span class="cd-date">2019-05-04</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_04_22/new_2019_04_22.html">少年班学院第十二届学生代表大会暨主席团换届选举大会顺利召开</a></h2>
+                <p>少年班学院第十二届学生代表大会暨主席团换届选举大会成功召开。<br /></p>
+                <span class="cd-date">2019-04-22</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_04_21/new_2019_04_21.html">VR体验的第一天，我们收获了好多黑照</a></h2>
+                <p>“少年行”体育文化节的第一天，VR运动游戏体验活动如期对外开放，不负众望地收获了同学们的大量黑照。<br /></p>
+                <span class="cd-date">2019-04-21</span>
+            </div>
+        </div>
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_04_02/new_2019_04_02.html">少年逐远梦，匡士筑桢才|四校交流活动圆满结束</a></h2>
+                <p>2019年3月30日及31日，少院学子远赴南京，参加一年一度的四校交流活动。<br /></p>
+                <span class="cd-date">2019-04-02</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_03_26_2/new_2019_03_26_2.html">物理专业经验交流会顺利举办</a></h2>
+                <p>3月24日晚，物理学院专业经验交流会在二教2103顺利举办，<br /></p>
+                <span class="cd-date">2019-03-26</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_03_26/new_2019_03_26.html">化学专业经验交流会顺利举办</a></h2>
+                <p>3月24日晚上，化学学院转专业交流会在二教2103顺利举办，来自化学学院各个专业<br /></p>
+                <span class="cd-date">2019-03-26</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_03_24_2/new_2019_03_24_2.html">数统专业经验交流会顺利举办</a></h2>
+                <p>3月24日下午，数学与统计转专业交流会在2106顺利举行，四位学长为我们就数学和统计进行了介绍。<br /></p>
+                <span class="cd-date">2019-03-24</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_03_24/new_2019_03_24.html">信计专业经验交流会顺利举办</a></h2>
+                <p>3月23日下午，信息学院和计算机科学与技术学院的转院交流会顺利举行<br /></p>
+                <span class="cd-date">2019-03-24</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_03_06/new_2019_03_06.html">猪年第一辩：做人还是做猪更幸福？</a></h2>
+                <p>2019年3月3日，少年班学院辩论队举行了一场以“做人更幸福还是做猪更幸福？”为主题的辩论赛。正反双方发言犀利、相互质疑，针对这个直指当今人类社会主流生活态度的问题展开了激烈的辩论。<br /></p>
+                <span class="cd-date">2019-03-06</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2019_01_13/new_2019_01_13.html">少年班学院学生会全员大会顺利召开</a></h2>
+                <p>在学期工作暂告结束之时，少年班学院学生会全员大会于2019年1月12日在第二教学楼2121教室举行。<br /></p>
+                <span class="cd-date">2019-01-13</span>
+            </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_12_25/new_2018_12_25.html">激扬人生，品味科学——记少年班讲坛郭光灿院士专场</a></h2>
+                <p>12月23日晚，少年班讲坛郭光灿场于水上报告厅顺利举办，讲座中郭院士用亲切质朴而又风趣幽默的语言向同学们介绍了他的学习经历与科研生涯，并回答了同学们提出的问题，为同学们释疑解惑。<br /></p>
+                <span class="cd-date"> 2018-12-25</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_12_20_1/new_2018_12_20_1.html">安大辩论友谊赛——高校产业化利弊</a></h2>
+                <p>12月14日晚八点，中科大少年班学院与安大历史系的辩论友谊赛如期在安大文西楼213室如期举行。双方的辩题是：高校产业化利大于弊/弊大于利。<br /></p>
+                <span class="cd-date"> 2018-12-20</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_12_20_2/new_2018_12_20_2.html">辩论赛——没有爱情的高中生活是完整/不完整的</a></h2>
+                <p>今天，老图书馆323室，正方——地空的张浩源和漂酿小解节丁畅持“没有爱情的高中生活是完整的”观点，与反方——化院李俍携手少院“萌新”李佳峰（认为没有爱情的高中生活是不完整的单身汪们）友好讨论、亲切交流。<br /></p>
+                <span class="cd-date"> 2018-12-20</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_12_20_3/new_2018_12_20_3.html">辩论赛——人生路上拿得起/放得下更难</a></h2>
+                <p>人生路上，拿起和放下是我们常常遇到的选择。11月11日晚上8点，以“人生路上拿得起/放得下更难”为题的辩论赛在少院102开展。<br /></p>
+                <span class="cd-date"> 2018-12-20</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_12_15/new_2018_12_15.html">走进名企——阳光电源股份有限公司</a></h2>
+                <p>10月26日下午，少年班学院学生会组织举办了第一次“走进名企”活动。这是学生会首次举办走进名企的活动，意义重大。<br /></p>
+                <span class="cd-date"> 2018-12-15</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_12_14/new_2018_12_14.html">少年游|随光前行</a></h2>
+                <p>2018年12月8日晚7时，由中国科学技术大学少年班学院学生会开办的少年游，以星空三部曲为主题，分为“追光”、“寻光”、“拾光”三区，带我们重温少年时的美好，寄托对未来的期许。<br /></p>
+                <span class="cd-date"> 2018-12-14</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_12_12/new_2018_12_12.html">科赴珞珈，少年弘毅</a></h2>
+                <p>12月1日，科大少年班学院学生会的成员前往武汉大学进行交流，在志愿者的带领下在武大牌坊处合影作为整个行程的开端<br /></p>
+                <span class="cd-date"> 2018-12-12</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_11_29/new_2018_11_29.html">多样化的科研之路——记陆亚林博士报告</a></h2>
+                <p>2018年11月26日，国家同步辐射实验室主任陆亚林博士在水上报告厅作了一场精彩绝伦的报告。报告主题为“多样化的科研之路”，围绕陆亚林博士的个人经历展开，重点讲解了如何在生存、兴趣和需求之间寻找平衡。报告深入浅出，向同学们展现了一位科研工作者的真实生活，引起了在场同学的深刻共鸣。<br /></p>
+                <span class="cd-date"> 2018-11-29</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_11_24/new_2018_11_24.html">微积分讲座成功举办</a></h2>
+                <p>11月23日，微积分/数学分析B讲座在东区水上报告厅顺利举办。经过老师和优秀学长的教导，萌新们获益匪浅。<br /></p>
+                <span class="cd-date"> 2018-11-24</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_11_08/new_2018_11_08.html">束缚or解放？辩论赛：论人工智能与人类</a></h2>
+                <p>随着科学技术的突进，曾经似乎遥不可及的人工智能已经融入我们的生活。人们相关的思虑也乘着大潮踏上了舞台：一方面，人工智能提供了巨大的便利，作为最前沿的技术，以庞大智能谱系的形式，应该认为它从生活、生产角度解放了人；另一方面，它又似乎是无处不在的幽灵，以看不见的手引导着我们走向无处之处，似乎是一种束缚。当问题摆上台面，当双方各持己见，究竟哪一方会占领高地，获得认可呢？<br /></p>
+                <span class="cd-date"> 2018-11-08</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_11_07/new_2018_11_07.html">法律or教育？辩论校赛：校园霸凌如何解决</a></h2>
+                <p>长期以来，校园霸凌现象普遍存在，也一直是社会所关注的问题。韩非说：“一民之轨，莫如法”；孔子则认为当“道之以德，齐之以礼”。那么，想要解决校园霸凌问题，法律手段和教育手段到底何者更为有效呢？11月4日上午，一场关于这个话题的辩论赛在东区地空楼激烈开展。<br /></p>
+                <span class="cd-date"> 2018-11-07</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_11_04/new_2018_11_04.html">风一样的少年——运动会战报</a></h2>
+                <p>2018年10月26~27日，中国科学技术大学体育运动大会成功开展。运动场上，来自少年班学院的运动健儿们努力拼搏，取得佳绩。<br /></p>
+                <span class="cd-date"> 2018-11-04</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_10_30/new_2018_10_30.html">00班联谊活动顺利进行</a></h2>
+                <p>远道接白草，高天漾碧蓝。十月，恰逢我们踏入科大校园的第二个月，大学生活早已不复从前的陌生，一曲青春之歌正徐徐拉开序幕。大学伊始，我们每个人都渴望着结交新的朋友，拓展视野，领略精彩，让这朵友谊之花，永远盛放在人生路上。<br /></p>
+                <span class="cd-date"> 2018-10-30</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_10_26/new_2018_10_26.html">向前沿科技进军 先进实验室参观</a></h2>
+                <p>2018年10月20日，为了拓展视野，增强对科学学习的兴趣，各班的同学齐聚一堂，在工作人员的带领下，分为若干组参观了我校的十所实验室。<br /></p>
+                <span class="cd-date"> 2018-10-26</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_10_21/new_2018_10_21.html">少年班学院新生篮球赛顺利结束</a></h2>
+                <p>作为新生系列赛之一的新生篮球赛在10月10日落下帷幕。经过激烈角逐，创四班凭借出色的发挥拔得头筹。创二班屈居第二，创一班斩获第三名。<br /></p>
+                <span class="cd-date"> 2018-10-21</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_10_14/new_2018_10_14.html">2018天使杯足球赛顺利结束</a></h2>
+                <p>10月13日，我们的“天使杯”决赛已经结束，创新三班战胜001班，成功夺冠。<br /></p>
+                <span class="cd-date"> 2018-10-14</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_09_17/new_2018_09_17.html">少年班学院实验室参观活动成功举办</a></h2>
+                <p>2018年9月15日、16日，面向少年班学院学生的实验室参观活动成功举办。<br /></p>
+                <span class="cd-date"> 2018-09-17</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_09_16/new_2018_09_16.html">少年班学院学生会第一次全体会议顺利召开</a></h2>
+                <p>2018年9月15日12：30，少年班学院学生会第一次全体会议在2121顺利举行。<br /></p>
+                <span class="cd-date"> 2018-09-16</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_09_03/new_2018_09_03.html">少年班学院学生会招新大会正式举行</a></h2>
+                <p>2018年9月03日，2018少院学生会招新大会在少年班学院正式举行。<br /></p>
+                <span class="cd-date"> 2018-09-03</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_08_23/new_2018_08_23.html">新生经验交流会成功举行</a></h2>
+                <p>2018年8月23日，2018少院新生经验交流会在东三报告厅成功举行。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-08-23</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_07_21/new_2018_07_21.html">“临别赠言”毕业活动顺利举行</a></h2>
+                <p>6.19-6.23晚7：00-9：00，在221宿舍楼下举行了“临别赠言”毕业活动，一起来看看吧~<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-07-21</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_06_19/new_2018_06_19.html">2018级创新试点班复试家长接待工作圆满成功</a></h2>
+                <p>6月17日，2018级中国科学技术大学少年班学院创新试点班复试在东校区举行，少年班学院学生会家长接待项目组的成员接待了来参加复试的学弟学妹以及家长朋友们。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-06-19</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_05_22/new_2018_05_22.html">少年班学院2018年成人仪式</a></h2>
+                <p>五月二十，雨后微凉，即将成年的少院同学们来到凤阳县小岗村，于沈浩同志先进事迹陈列馆前，参加成人仪式。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-05-22</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_05_16/new_2018_05_16.html">少年班学院学生会换届大会顺利举办</a></h2>
+                <p> 2018年5月16日，少年班学院学生会换届大会于2105教室顺利举办。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-05-16</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_05_03/new_2018_05_03.html">Mathematica讲座顺利举办</a></h2>
+                <p> 本次Mathematica（MMA）讲座于五月二日晚上七点在2121教室举行，吴昕学长通过数个实例讲解了MMA的特点及使用方法。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-05-03</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_04_27/new_2018_04_27.html">少年班学院第十一届学生代表大会暨主席团换届选举大会顺利召开</a></h2>
+                <p> 2017年4月26日中午12：20，少年班学院第十一届学生代表大会暨主席团换届选举大会在2321教室成功召开。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-04-27</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_04_20/new_2018_04_20.html">荣誉学院青年交流峰会</a></h2>
+                <p>菌菌去参加荣誉学院的交流峰会~<br />与众多荣誉的同学一起交流，收获颇丰<br />同时也感谢上交的同学们的热心招待~</p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-04-20</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_04_16/new_2018_04_16.html">信息与计算机学科经验交流会顺利举行</a></h2>
+                <p> 本次交流会与4月14日下午2:00于2104教室举行，由少年班学院学生会承办。会上符气鸿、尹童欣、何纪言、曾明亮四位学长学姐向同学们介绍了信息学院和计算机学院。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-04-16</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_04_11/new_2018_04_11.html">樱花节 | 摄影作品 展示</a></h2>
+                <p> 由于微信的投票中图片最多只能设置1M，为了尽可能保留投稿摄影作品的美感，小编决定先将所有作品（共72件）陈列如下并标注序号。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-04-11</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_04_02/new_2018_04_02.html">化学专业交流会圆满结束</a></h2>
+                <p> 本 本次化学专业交流会于4月1日下午14:00，在东区2104举行。会上，来自化学专业的优秀学长和教师与同学们进行了友好而深入的交流。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-04-02</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_03_26/new_2018_03_26.html">数学与统计学科交流会顺利举行</a></h2>
+                <p> 本次交流会于3月25日上午9:30-11:00，在东区图书馆四楼学术报告厅举行。本次交流会由少年班学院学生会承办，杨凌琳同学主持，请来了吴天、王嘉铭、郭怡琳三位学长学姐为我们介绍数学与统计学科。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-03-26</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_03_25/new_2018_03_25.html">Origin讲座顺利举办</a></h2>
+                <p>3月23日晚，Origin讲座在2121教室顺利举办。在讲座中，主讲人傅海阳学长详细地介绍了Origin的基本用法，提供了一些使用中的建议，还附带介绍了部分高级用法。同学们对这次讲座展现出了极高的热情，2121教室座无虚席，以至于部分同学只能站在教室后方或坐在过道里聆听讲座。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-03-25</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_03_20/new_2018_03_20.html">物理专业交流会</a></h2>
+                <p>八月十八日下午，我们在图书馆西侧学习报告厅，进行了转专业交流会，向同学们介绍了物理学院的一些信息。<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-03-20</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_01_16/new_2018_01_16.html">16级理科试验班2班开展读《知青岁月》学习活动</a></h2>
+                <p>2017年11月18日，002班召开了本学期第一次团学主题班会，本次班会的主题是“读《知青岁月》，学十九大精神”。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-01-16</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_01_15/new_2018_01_15.html">少年班讲坛暨本科生学术论文竞赛顺利举行</a></h2>
+                <p>本次少年班讲坛由施蕴渝院士主讲，她以“我的梦-我与科大”以及“从分子生物物理谈生物学中的相分离，相变与人类疾病”为题讲述了自己早年的人生经历以及生物科学的前沿。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-01-15</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2018_01_06/new_2018_01_06.html">少院学生会年终大会圆满召开</a></h2>
+                <p>孩提的气息渐渐地淡去，我们也在慢慢长大。可是，那些梦想一定还在某个地方盛开着……对，就在少年游，我们会继续实现那个童话般的梦想。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2018-01-06</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_12_17/new_2017_12_17.html">家长年会圆满结束！</a></h2>
+                <p>这次的家长年会增进了家长们对学校的理解，也给了同学与家长一次更好的了解彼此的机会，希望经过这次活动，同学们与家长的关系能够更加融洽。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-12-17</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_12_12/new_2017_12_12.html">少年游 | 在童话中追忆时光</a></h2>
+                <p>这次的家长年会增进了家长们对学校的理解，也给了同学与家长一次更好的了解彼此的机会，希望经过这次活动，同学们与家长的关系能够更加融洽。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-12-12</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_12_11/new_2017_12_11.html">一二九校园马拉松圆满结束</a></h2>
+                <p>12月9日下午，由校团委主办的2017年纪念“一二·九”校园微型马拉松长跑在西区操场举行。少年班学院的数名同学也参加了此次长跑活动。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-12-11</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_12_10/new_2017_12_10.html">浙江理工大学启新学院来我校参观顺利结束</a></h2>
+                <p>12月7日星期四中午，少年班学院的同学迎来了浙江理工大学启新学院大三大四的同学们，本次接待由中国科学技术大学少年班学院承办，少年班学生会协办，成功展示了科大独一无二的风采。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-12-10</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_11_12/new_2017_11_12.html">微积分讲座顺利举办</a></h2>
+                <p>本次讲座与11月11日19点整于水上报告厅举行，讲座中宣本金教授与吴天、杜昕泽、田野三位学长向同学们介绍了微积分的重点与技巧，并分享了他们的独特的见解与学习方面的建议。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-11-12</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_11_04/new_2017_11_04.html">楼管小姐姐采访报道</a></h2>
+                <p>当你进出寝室，总会有这么一群人在默默地注视着你，当你自习晚归，总会有人为你默默地留下一扇门，他们就是宿管，一群用以和蔼、亲切的形象每天迎接着碌碌学子，默默付出，不求回报的人。这个学期，321楼迎来了一位新的楼管姐姐，她不但年轻，工作更是认真负责，给人与众不同的温暖关怀。今天我们对她进行了一次访问，希望给大家分享一些她的工作经验，带领同学们走近楼管这个每天陪伴着我们的群体。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-11-04</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_11_01/new_2017_11_01.html">运动会特辑 | 少院战报</a></h2>
+                <p>在连续两日艳阳下，我校的运动会在运动员们的激烈比拼中落下帷幕。不同于往年的每逢运动会必下雨，今年的阳光格外明媚，大家斗志昂扬，展现出少院人的风采！&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-11-01</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_10_30/new_2017_10_30.html">第四届信息安全大赛圆满结束！</a></h2>
+                <p>第四届信息安全大赛（hackergame2017）圆满结束啦！&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-10-30</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_10_21/new_2017_10_21.html">东区路灯情况报告</a></h2>
+                <p>近日，有同学反应东区某些地段晚上较黑，影响出行情况。对此，菌菌小分队经过一番调查，搜罗了一些路段提醒同学们注意防黑。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-10-21</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_09_25_2/new_2017_09_25_2.html">“传递爱心圣火，点燃知识之光”线下义卖活动圆满结束</a></h2>
+                <p>2017年9月23日及24日，少年班学院分团委与少年班学院学生会在科大东区进行了以“传递爱心圣火，点燃知识之光”为主题的爱心义卖活动，售出许许多多富有少院特色的手工艺品，为支教地区孩子的生活贡献了一份力量。 &nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-09-25</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_09_25_1/new_2017_09_25_1.html">“社会交往之窍门”讲座顺利举办</a></h2>
+                <p>本次讲座于9月23日9点30在2121教室举行，主要围绕同学们关于社会交往的疑惑以及沟通方面的障碍和技巧两大主题展开。 &nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-09-25</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_09_24/new_2017_09_24.html">2017天使杯足球赛顺利结束</a></h2>
+                <p>9月23日，我们的“天使杯”决赛已经结束，创新班三班战胜001班胜出，顺利夺冠。从15日到23日一共九天的辛苦征程。现在，小编带大家来回顾一下足球赛中的风风雨雨吧。 &nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-09-24</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_09_23/new_2017_09_23.html">2017新生篮球小组赛顺利结束</a></h2>
+                <p>刚入学的新同学们想必都想在新校园里大展身手（搞一波事）吧，于是，以增进同学友谊为目的，展现提升个人能力为方向，2017年新生篮球及足球班赛正式开始啦。  &nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-09-23</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_09_19/new_2017_09_19.html">向前沿科技进军 量子实验室参观</a></h2>
+                <p>2017年9月17日下午2点，为了拓展视野，增强对科学学习的兴趣，来自不同学院的学生们齐聚一堂，在工作人员的安排和指导下，自觉分成若干小组，有序地进入量子信息实验室进行参观。 &nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-09-19</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_09_16/new_2017_09_16.html">勿负韶华——赴一场青春的盛宴</a></h2>
+                <p>2017年9月15日，中国科学技术大学东区大礼堂。<br />紧张、激动、刺激<br />千余科大学子齐聚，赴一场青春的盛宴&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-09-16</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_09_11/new_2017_09_11.html">少院学生会第一次全体会议顺利召开</a></h2>
+                <p>本次全体会议于9月10日12点30在2105教室举行，主要围绕少年游、本科生学术论文竞赛及学生会内部内联三大活动介绍展开。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-09-11</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_09_06/new_2017_09_06.html">来科大的你，今天过得如何？</a></h2>
+                <p>一转眼新生报到也过去两周多了，天南海北赶来求学的年轻人们想必也已经慢慢摸索了这个尚且还算陌生的校园，那么可爱的萌新们对这个学校的各个方面是怎么看的呢，让我们跟着菌菌的摄像头一起去抓几个新生来采访吧&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-09-06</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+            </div>
+            <div class="cd-timeline-content">
+                <h2><a href="./html_news/news_content/new_2017_09_03/new_2017_09_03.html">少年班学院学生会招新大会正式举行</a></h2>
+                <p>2017年9月1日19:00，中国科大少年班学院学生会招新大会在理化大楼东三报告厅正式举行。本次招新大会主要分招新视频、主席讲话、部长介绍部门以及同学们的笔试和面试几个部分。&nbsp;<br /></p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date"> 2017-09-06</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+    </div>
+	<div class="footer">
+		<p class="foot">少年班学院学生会© 2017‐2018 All rights reserved.</p>
+		<a class="foot" href="../../html_index/html_lxwm/lxwm.html">联系我们</a>
+	</div>
+	<script type="text/javascript">
+    $(document).ready(function(){
+		var $timeline_block = $('.cd-timeline-block');
+
+		//hide timeline blocks which are outside the viewport
+		$timeline_block.each(function(){
+			//if($(window).scrollTop() + $(window).height() >= ($(this).offset().top + $(this).outerHeight()/2)) {
+				$(this).find('.cd-timeline-img, .cd-timeline-content').addClass(function(){$(this).hide();});
+			//}
+		});
+		self.setInterval(xiaolunzi,200);
+		function xiaolunzi(){
+			$timeline_block.each(function(){
+				if($(window).scrollTop() + $(window).height() >= ($(this).offset().top - $(this).height()) && $(this).find('.cd-timeline-img').is(':hidden') ) {
+					$(this).find('.cd-timeline-img, .cd-timeline-content').addClass(function(){$(this).show();$(this).animate({opacity: 1},300);});
+				}
+			});
+		}
+	});
+    </script>
+</body>
+</html>
