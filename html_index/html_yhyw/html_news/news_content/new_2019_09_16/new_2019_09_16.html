@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ready? Go!</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="keywords" content="中国科学技术大学,少年班学院,学生会,中科大,少院">
+	<meta name="author" content="少年班学院学生会技术部">
+	<meta name="description" content="Ready? Go!">
+	<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" >
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="../../../../../universal_css/menu.css" rel="stylesheet"/>
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../../../../universal_js/menu.js"></script>
+    <link href="../../news_css/new.css" rel="stylesheet"/>
+    <style type="text/css">
+    .row1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+	}
+	.row1 > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+	}
+    </style>
+</head>
+<body>
+	<div class="row hidden-sm hidden-xs" style="background-color:#323232; position:fixed; z-index:100; width:105%;">
+			<div class="col-sm-3 col-md-3 col-xl-3">
+				<button style="margin-left:10%" type="button" class="head-button btn"><a style="font-size:1.75vw;" class="head-button" href="../../../../../index.html">少年班学院学生会</a></button>
+			</div>
+			<div class="col-sm-3 col-md-3 col-xl-3"></div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" aria-pressed="false" data-toggle="dropdown" id="dropdownMenu1">
+					院会介绍 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_zzjg/zzjg.html">组织架构</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_xcsp/xcsp.html">宣传视频</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu2">
+					活动新闻 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_yhyw/yhyw.html">院会要文</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_tzgg/tzgg.html">通知公告</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3">
+					权益福利 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="http://scgyqy.ourscgy.ustc.edu.cn/" target="_blank">权益维护</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="http://mp.weixin.qq.com/s/TOAzFOAc9j__8a6ov2f6qg" target="_blank">少院纪念品</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabin2ex="-1" href="http://scgypf.ourscgy.ustc.edu.cn" target="_blank">少年班讲坛报名</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1">
+				<button type="button" class="head-button btn"><a class="head-button" href="../../../../../html_index/html_yk/yb.html">少院院刊</a></button>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1">
+				<button type="button" class="head-button btn"><a class="head-button" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a></button>
+			</div>
+	</div>
+	<div class="row hidden-md hidden-lg" style="text-align:center; background-color:#323232; position:fixed; z-index:98; width:105%;">
+		<div class="col-xs-12 hidden-sm"><p onclick="window.open('../../../../../index.html','_self')" class="head-title-xs">少院学生会</div>
+		<div class="col-sm-12 hidden-xs"><p onclick="window.open('../../../../../index.html','_self')" class="head-title-sm">少年班学院学生会</p></div>
+	</div>
+	<div class="hidden-md hidden-lg" style="position:fixed;z-index:99;">
+			<div type="button" class="hidden-sm butt btn" id="flip1">菜单</div>
+			<div type="button" class="hidden-xs butt btn" id="flip2">菜单</div>
+			<div class="flip_contain" id="pane">
+				<div type="button" class="pane_button butt" id="panel">院会介绍 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane1">
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_zzjg/zzjg.html">组织架构</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_xcsp/xcsp.html">宣传视频</a></div>
+				</div>      
+				<div type="button" class="pane_button butt" id="pane2">活动新闻 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane2">
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_yhyw/yhyw.html">院会要文</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_tzgg/tzgg.html">通知公告</a></div>
+				</div>      
+				<div type="button" class="pane_button butt" id="pane3">权益福利 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane3">
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://scgyqy.ourscgy.ustc.edu.cn/" target="_blank">权益维护</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://mp.weixin.qq.com/s/TOAzFOAc9j__8a6ov2f6qg" target="_blank">少院纪念品</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://scgypf.ourscgy.ustc.edu.cn" target="_blank">少年班讲坛报名</a></div>
+				</div>      
+				<div type="button" class="pane_button"><a class="butt" href="../../../../../html_index/html_yk/yb.html">少院院刊</a></div>
+				<div type="button" class="pane_button"><a class="butt" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a></div>
+			</div>
+	</div>
+	<div class="row row1">
+		<div class="hidden-xs col-md-2 col-sm-2 col-xl-2" style="background-image:url(../../news_material/bg.jpg);"></div>
+		<div class="hidden-sm hidden-md hidden-lg col-xs-1" style="background-color:#F7F7F7"></div>
+		<div class="cont col-md-8 col-sm-8 col-xs-10 col-xl-8">
+			<h2 class="text-center strong hd ">Ready? Go!</h2>
+			<div class="main_sub_title"><p>发布时间:2019-9-16&emsp;&emsp;作者:中科大少院学生会</p></div>
+			<div class="zhengwen">
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/23.png"/>
+				</div>
+                                                                 <p>
+					&emsp;&emsp;6点半时就有同学陆续入场，当时屏幕上放映的同学们军训的一些感悟，刹那间又把我们的思绪拉回不久前段痛并快乐着的日子。
+<br>
+&emsp;&emsp;7点，没有任何征兆，民族乐团就奏响了“瑶族舞曲”，会场顿时安静了下来。在灵动而又轻盈的旋律中，晚会拉开了帷幕。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/1.png"/>
+<p  style="color:#a0a0a0; text-align:center">瑶族舞曲 by 校学生民族乐团</h1>
+				</div>
+				<p>
+					&emsp;&emsp;序曲结束后，伴随着热烈的掌声，四位主持人华丽地登场了。他们简单的和观众互动几句后，把舞台交给街舞社的哥哥姐姐们。
+<br>
+&emsp;&emsp;街舞串烧可谓是精彩绝伦，从略带诡异色彩的机械舞到热情似火的街舞，他们给我们带来了一场视觉盛宴
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/2.png"/>
+<p style="color:#a0a0a0; text-align:center">美丽的主持人小姐姐&帅气的主持人小哥哥</p>				
+</div>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/3.png"/>
+<p style="color:#a0a0a0; text-align:center">Galaxy Crew  by 街舞协会</p>				
+</div>
+				<p>
+					&emsp;&emsp; 随之而来的由刘嘉琪和李欣阳带来的rap“不用去猜”也点燃了全场的热情，让我们看到了物院学子勇攀高峰不畏艰险的决心。
+<br>
+&emsp;&emsp;  后续的几个节目“匈牙利狂想曲”“打灯谜”等也各有特色，或恬静或搞笑，或高雅或通俗，从几个不同的方面彰显科大多元的文化内核。
+<br>
+&emsp;&emsp; 张星宇的一首日文歌“lemon”唱出了他自己的风格，更加细腻的处理让原本富有节奏感的旋律增添了几分忧伤，似乎是对原来剧里非自然死亡的人们的叹惋。
+
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/4.png"/>
+<p style="color:#a0a0a0; text-align:center">不用去猜 by 刘嘉琪 李欣阳</p>				
+</div>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/5.png"/>
+<p style="color:#a0a0a0; text-align:center">打灯谜 by 相声社</p>				
+</div>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/6.png"/>
+<p style="color:#a0a0a0; text-align:center">匈牙利狂想曲第二号 by 刘航宇</p>				
+</div>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/7.png"/>
+<p style="color:#a0a0a0; text-align:center">Lemon by 张星宇</p>				
+</div>
+<p>
+					&emsp;&emsp;表演第一阶段结束以后，便到了抽奖环节，主持人随机从微信签到的同学中抽取幸运的几名赠予手环。随着幸运儿的产生，现场更燃了。
+
+
+					
+				</p>
+<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/8.jpg"/>
+<p style="color:#a0a0a0; text-align:center">气氛热烈的抽奖现场</p>				
+</div>
+				
+				<p>
+					&emsp;&emsp;在这个小插曲过后，精彩的表演继续，第二阶段更多的是社团文化和才艺的展现。
+					<br>
+					&emsp;&emsp;炫音社殷浩演唱的“不染”清新脱俗，在尊重原作的同时融入了自己对歌曲的理解。
+					<br>
+					&emsp;&emsp;由第十二夜广播剧配音社带来的“男子科大生的日常”戳中了我们的笑点，其中许多科大特有的梗如“彼岸花”也让我我们会心一笑，屏幕上的弹幕也给出了普遍好评。
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/9.jpg"/>
+<p style="color:#a0a0a0; text-align:center">不染 by 炫音社 殷昊</p>				
+</div>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/10.jpg"/>
+<p style="color:#a0a0a0; text-align:center">男子科大生的日常 by 第十二夜广播剧配音社</p>				
+</div>
+                              			<p>
+					&emsp;&emsp;后来经过高雅艺术“D大调第十七嬉游曲”的调剂，由树之表演艺术社的小品“善恶终有报”将晚会推向高潮，令人捧腹的情节，演员们夸张的表演，都使得小品极有艺术张力。
+					
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/11.jpg"/>
+<p style="color:#a0a0a0; text-align:center">D大调第十七嬉游曲 K.334 by 校学生爱乐协会</p>				
+</div>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/12.jpg"/>
+<p style="color:#a0a0a0; text-align:center">善恶终有报 by 树之表演艺术社</p>				
+</div>
+                              			<p>
+					&emsp;&emsp;表演第二阶段结束后，又到了激动人心的抽奖环节了。这次是由转臂随机选取，出现在画面中央的同学可以得到蓝牙耳机。一时间场上荧光棒飞舞，大家都试图吸引转臂的注意。
+<br>					
+&emsp;&emsp;在三名观众被选出来以后，由美妆协会带来的走秀“trouble maker”也是让我们看到了同学穿衣的高级感。
+		
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/13.jpg"/>
+<p style="color:#a0a0a0; text-align:center">Trouble Maker by 美妆协会</p>				
+</div>
+                              			<p>
+					&emsp;&emsp;随后校学生舞蹈团方晓箐老师的舞蹈表演“烈火”和“你不懂我”也让同学大饱眼福。老师亭亭玉立的身姿在台上快速地旋转，手中的绸缎像莲花一般绽放。
+<br>					
+&emsp;&emsp;而夏远林的独唱“春风十里”也是和前面节目的风格迥异，以温暖和柔情见长，台下听众都如痴如醉。
+<br>
+					&emsp;&emsp;武术协会的表演也是相当精彩，表演者们都纷纷拿出了看家本领：双截棍舞的呼呼有声，好几厘米厚的木板也被轻松击破，让同学们叹为观止。		
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/14.jpg"/>
+<p style="color:#a0a0a0; text-align:center">烈焰 by 方晓菁老师
+
+</p>				
+</div>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/15.jpg"/>
+<p style="color:#a0a0a0; text-align:center">你不懂我 by 方晓菁老师
+
+</p>				
+</div>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/16.jpg"/>
+<p style="color:#a0a0a0; text-align:center">春风十里 by 夏远林</p>				
+</div>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/17.jpg"/>
+<p style="color:#a0a0a0; text-align:center">武术表演 by 武术协会</p>				
+</div>
+				<p>
+					&emsp;&emsp;当得知第三轮抽奖会送出一部手机时，全场都沸腾了！最后是七排二十四的一位学长成为了幸运儿。
+					<br>
+					&emsp;&emsp;这次抽奖完后，晚会接近了尾声。
+					<br>
+					&emsp;&emsp;刘黔渝同学的吉他独奏 “Fight” 平静中蕴含坚韧的力量，又由平静渐臻热烈，赢得现场阵阵掌声。
+					<br>
+					&emsp;&emsp;山南工作室的rap“登顶成为了晚会最劲爆的节目，急促的鼓点和富有韵律的说唱表现了科大学生绝不妥协绝不将就的态度。
+					<br>
+					&emsp;&emsp;而校交响乐团带来的“阿莱城姑娘组曲”“第二组曲”“法兰多拉舞曲”让现场归于平静，“勿负韶华”晚会也在悠扬的音乐中结束了。
+
+
+				</p>
+
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/18.jpg"/>
+<p style="color:#a0a0a0; text-align:center">抽奖抽到手机的真 · 欧皇</p>				
+</div>
+
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/19.jpg"/>
+<p style="color:#a0a0a0; text-align:center">Fight by 刘黔渝</p>				
+</div>
+
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/20.jpg"/>
+<p style="color:#a0a0a0; text-align:center">登顶 by 炫音社山南工作室</p>				
+</div>
+
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/21.jpg"/>
+<p style="color:#a0a0a0; text-align:center">阿莱城姑娘组曲 第二组曲 法兰多拉舞曲 all by 校学生交响乐团</p>				
+</div>
+<p>
+					&emsp;&emsp;晚会临近尾声，全体观众肃立，齐唱校歌《永恒的东风》。
+					<br>
+					&emsp;&emsp;这次晚会是19级新生第一次参加大型文艺活动，也会成为他们在科大的一个起点，鼓励他们在今后的学习道路上努力前行，勿负韶华。
+					</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/22.jpg"/>
+<p style="color:#a0a0a0; text-align:center">全场观众齐唱校歌</p>				
+</div>
+			</div>
+		</div>
+		<div class="hidden-xs col-md-2 col-sm-2 col-xl-2" style="background-image:url(../../news_material/bg.jpg);"></div>
+		<div class="hidden-sm hidden-md hidden-lg col-xs-1" style="background-color:#F7F7F7"></div>
+	</div>
+	<div class="footer">
+		<p class="foot">少年班学院学生会© 2018‐2019 All rights reserved.</p>
+		<a class="foot" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a>
+	</div>
+</body>
+</html>
