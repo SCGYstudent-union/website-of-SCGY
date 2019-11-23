@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>走进名企——美的冰箱</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="keywords" content="中国科学技术大学,少年班学院,学生会,中科大,少院">
+	<meta name="author" content="少年班学院学生会技术部">
+	<meta name="description" content="走进名企——美的冰箱">
+	<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" >
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="../../../../../universal_css/menu.css" rel="stylesheet"/>
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../../../../universal_js/menu.js"></script>
+    <link href="../../news_css/new.css" rel="stylesheet"/>
+    <style type="text/css">
+    .row1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+	}
+	.row1 > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+	}
+    </style>
+</head>
+<body>
+	<div class="row hidden-sm hidden-xs" style="background-color:#323232; position:fixed; z-index:100; width:105%;">
+			<div class="col-sm-3 col-md-3 col-xl-3">
+				<button style="margin-left:10%" type="button" class="head-button btn"><a style="font-size:1.75vw;" class="head-button" href="../../../../../index.html">少年班学院学生会</a></button>
+			</div>
+			<div class="col-sm-3 col-md-3 col-xl-3"></div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" aria-pressed="false" data-toggle="dropdown" id="dropdownMenu1">
+					院会介绍 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_zzjg/zzjg.html">组织架构</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_xcsp/xcsp.html">宣传视频</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu2">
+					活动新闻 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_yhyw/yhyw.html">院会要文</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="../../../../../html_index/html_tzgg/tzgg.html">通知公告</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1 dropdown">
+				<button type="button" class="head-button btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3">
+					权益福利 <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="http://scgyqy.ourscgy.ustc.edu.cn/" target="_blank">权益维护</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="http://mp.weixin.qq.com/s/TOAzFOAc9j__8a6ov2f6qg" target="_blank">少院纪念品</a>
+					</li>
+					<li role="presentation">
+						<a role="menuitem" tabin2ex="-1" href="http://scgypf.ourscgy.ustc.edu.cn" target="_blank">少年班讲坛报名</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1">
+				<button type="button" class="head-button btn"><a class="head-button" href="../../../../../html_index/html_yk/yb.html">少院院刊</a></button>
+			</div>
+			<div class="col-sm-1 col-md-1 col-xl-1">
+				<button type="button" class="head-button btn"><a class="head-button" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a></button>
+			</div>
+	</div>
+	<div class="row hidden-md hidden-lg" style="text-align:center; background-color:#323232; position:fixed; z-index:98; width:105%;">
+		<div class="col-xs-12 hidden-sm"><p onclick="window.open('../../../../../index.html','_self')" class="head-title-xs">少院学生会</div>
+		<div class="col-sm-12 hidden-xs"><p onclick="window.open('../../../../../index.html','_self')" class="head-title-sm">少年班学院学生会</p></div>
+	</div>
+	<div class="hidden-md hidden-lg" style="position:fixed;z-index:99;">
+			<div type="button" class="hidden-sm butt btn" id="flip1">菜单</div>
+			<div type="button" class="hidden-xs butt btn" id="flip2">菜单</div>
+			<div class="flip_contain" id="pane">
+				<div type="button" class="pane_button butt" id="panel">院会介绍 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane1">
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_zzjg/zzjg.html">组织架构</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_xcsp/xcsp.html">宣传视频</a></div>
+				</div>      
+				<div type="button" class="pane_button butt" id="pane2">活动新闻 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane2">
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_yhyw/yhyw.html">院会要文</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="../../../../../html_index/html_tzgg/tzgg.html">通知公告</a></div>
+				</div>      
+				<div type="button" class="pane_button butt" id="pane3">权益福利 <span class="caret"></span></div>
+				<div class="pane_contain" id="sub_pane3">
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://scgyqy.ourscgy.ustc.edu.cn/" target="_blank">权益维护</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://mp.weixin.qq.com/s/TOAzFOAc9j__8a6ov2f6qg" target="_blank">少院纪念品</a></div>
+					<div type="button" class="sub_pane_button"><a class="butt" href="http://scgypf.ourscgy.ustc.edu.cn" target="_blank">少年班讲坛报名</a></div>
+				</div>      
+				<div type="button" class="pane_button"><a class="butt" href="../../../../../html_index/html_yk/yb.html">少院院刊</a></div>
+				<div type="button" class="pane_button"><a class="butt" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a></div>
+			</div>
+	</div>
+	<div class="row row1">
+		<div class="hidden-xs col-md-2 col-sm-2 col-xl-2" style="background-image:url(../../news_material/bg.jpg);"></div>
+		<div class="hidden-sm hidden-md hidden-lg col-xs-1" style="background-color:#F7F7F7"></div>
+		<div class="cont col-md-8 col-sm-8 col-xs-10 col-xl-8">
+            <h2 class="text-center strong hd ">走进名企——美的冰箱</h2>
+			<div class="main_sub_title"><p>发布时间:2019-10-26&emsp;&emsp;作者:中科大少院学生会</p></div>
+			<div class="zhengwen">
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/1.jpg"/>
+				</div>
+                <p>
+                    <strong>前往企业：</strong>
+                    <br>
+                    &emsp;&emsp;下午1点20分，全体参加活动人员到齐东区西门口，统一乘坐美的公司大巴前往合肥美的冰箱总部。
+                    <br>
+                    <strong>HR高管讲座：</strong>
+                    <br>
+                    &emsp;&emsp;下午2点钟，同学们走进了美的冰箱总部事业部楼，在美的工作人员的带领下，同学们有序安静地穿过办公区来到了会议室，在这里，美的冰箱事业部HR左经理向大家生动全面地介绍了美的集团，包括美的的部门组成、主要产品、价值观和用人之道。
+                    <br>
+                    &emsp;&emsp;通过了解美的的部门组成，同学们学习到了一个庞大组织如何合理分工可以高效运转，对同学们日后创业具有启迪作用。在美的价值观介绍中，左经理生动阐释了美的“科技尽善，生活尽美”的愿景与“联动人与万物，启迪美的世界”的使命，引同学们深入思考科技与社会的关系。
+                    <br>
+                    &emsp;&emsp;在本环节的最后，左经理送给少年班学院学生们三句话，寄托了美的集团对科大少年班学院学生们的衷心祝愿与诚挚建议，这三句话是：“正青春，创不凡”“鉴往知来，破茧成蝶”“方向比努力重要，能力比知识重要”。在这样的一场成功职场人士的讲座中，同学们收获了许多课本上涉及不到的生活智慧与成长建议。
+                </p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/2.jpg"/>
+                    <p style="color:#a0a0a0; text-align:center">本图片中“少年班同学”指少年班学院同学</p>
+				</div>
+                <p>
+                    <strong>产品展厅参观：</strong>
+                    <br>
+                    &emsp;&emsp;下午三点，同学们在工作人员带领下来到了研发楼一楼展厅。展厅中陈列了各种外形、各种材质、各种功能的冰箱，
+                    配合着专业人员对产品的功能、技术、市场等方面的讲解，同学们在感受趣味的同时学习到了冰箱的一些技术与功能方面的小知识。
+                    展厅主要分为海外产品区与国内产品区，在了解到面向不同市场的冰箱从外观到功能都差别巨大，
+                    并且这些差别都是与地域文化相关之后，同学们更深刻的体会到了科技研发要以人为本、面向人类需求的道理。
+                    <br>
+                   
+                </p>
+                <div class="cont-img">
+                    <img class="img-responsive center-block" src="./material/3.jpg" />
+                    <img class="img-responsive center-block" src="./material/4.jpg" />
+                    <img class="img-responsive center-block" src="./material/5.jpg" />
+                </div>
+				
+                <p>
+                    <strong>生产车间参观：</strong>
+                    <br>
+                    &emsp;&emsp;下午四点，同学们来到了经开区工厂车间，再戴上防护耳机后，同学们在专业技工的带领下参观流水线，
+                    零距离感受了制造业的流水线工作状态，直观地认识到家电从零部件到合格成品的过程，。看到各种自动化的流水线设备，
+                    同学们兴趣十足，时不时驻足观察研究，
+                    积极向工作人员提出疑问，在这样的过程中丰富了对制造业的认识，对同学们的科学学习有指导性意义。
+                </p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/6.jpg"/>
+                </div>
+				
+                <p>
+                    <strong>Q&A环节：</strong>
+                    <br>
+                    &emsp;&emsp;下午五点，同学们返回事业部会议室，在稍事休整，补充水果饮用水后，进行答疑环节。
+                    答疑的两位工作人员是美的冰箱事业部HR左经理与研发工程师曾工。同学们提问积极，左经理与曾工畅舒己见，
+                    与大家就人才发展、技术研发、制造业走向等学生们最感兴趣的话题进行了深度交流。美的工作人员还为提问的同学准备了精美纪念礼品。
+                    交流结束后，左经理赞叹了少年班学院学生们有想法、善思考，同学们也表示聆听职场人士的观点拓宽了自己的思维与视野。
+                </p>
+                <div class="cont-img">
+					<img class="img-responsive center-block" src="./material/7.jpg"/>
+                    <p style="color:#a0a0a0; text-align:center">本图中“少年班同学”指少年班学院同学</p>				
+                </div>
+				
+                <p>
+                    <strong>合影留念，返回学校：</strong>
+                    <br>
+                    &emsp;&emsp;下午六点，中科大少年班学院参加活动的学生们与美的高管亲切合影留念，之后乘坐专车，全体人员安全返校。
+                </p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/8.jpg"/>
+                    <p style="color:#a0a0a0; text-align:center">本图中“少年班同学”指少年班学院同学</p>			
+                </div>
+				
+                <p>
+                    <strong>参与者感想采访：</strong>
+					<br>
+				</p>
+				<div class="cont-img">
+					<img class="img-responsive center-block" src="./material/9.jpg"/>
+                </div>
+                <p>
+                    <strong>活动总结：</strong>
+                    <br>
+                    &emsp;&emsp;走进500强企业内部，直面企业运转，了解制造业发展现状，为同学们将来就业提供了生动蓝图。
+                    具体了解了科技到制造的机遇与挑战，增强了同学们形成对当下理论性基础学习的使命感与追求感；
+                    与一线工程师深度交流，向优秀科研人员学习如何将理论知识变为实践研发，激励了同学们培养自我创新能力。
+                    <br>
+                  
+                </p>
+			
+
+
+			</div>
+		</div>
+		<div class="hidden-xs col-md-2 col-sm-2 col-xl-2" style="background-image:url(../../news_material/bg.jpg);"></div>
+		<div class="hidden-sm hidden-md hidden-lg col-xs-1" style="background-color:#F7F7F7"></div>
+	</div>
+	<div class="footer">
+		<p class="foot">少年班学院学生会© 2018‐2019 All rights reserved.</p>
+		<a class="foot" href="../../../../../html_index/html_lxwm/lxwm.html">联系我们</a>
+	</div>
+</body>
+</html>
